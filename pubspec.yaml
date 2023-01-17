@@ -1,7 +1,7 @@
 name: yb_flutter_lib_ui
 description: flutter quick ui lib.
 version: 0.0.2
-homepage: https://github.com/SeventyThr/05_myApp
+homepage: https://github.com/crazycoding7/flutter_lib_ui
 
 environment:
   sdk: ">=2.17.0 <3.0.0"
