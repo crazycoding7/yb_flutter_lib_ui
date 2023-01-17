@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yb_flutter_lib_ui/button/widget_button.dart';
 import 'package:yb_flutter_lib_ui/text/widget_text.dart';
 
 void main() {
@@ -42,6 +43,11 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             WidgetText.getTextNormal(
                 text: '组件：yb_flutter_lib_ui', color: Colors.red),
+            WidgetButton.getBtnNormal(
+              child: WidgetText.getTextNormal(text: '按钮'),
+              bgColor: Colors.green,
+              radius: 10,
+            ),
           ],
         ),
       ),

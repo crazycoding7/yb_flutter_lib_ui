@@ -2,20 +2,6 @@ import 'package:flutter/material.dart';
 
 class WidgetText {
   /// 单行
-  /*
-   WidgetText.getTextNormal(
-              text: '',
-              color: CommonColors.color_333333,
-              fontSize: 16.sp,
-              fontWeight: FontWeight.bold,
-            ),
-   WidgetText.getTextNormal(
-            text: '电子病历笺',
-            color: CommonColors.color_333333,
-            fontSize: 14.sp,
-          ),
-  */
-
   static getTextNormal(
       {String text = '',
       Color color = Colors.white,
