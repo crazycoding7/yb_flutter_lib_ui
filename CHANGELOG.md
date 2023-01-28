@@ -1,3 +1,7 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* first commit ui lib.
+
+## 0.0.2
+
+* Updated README.
