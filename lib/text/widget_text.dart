@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
+///
+/// 常用文本展示
 class WidgetText {
-  /// 单行
+  /// 单行文本
+  /// text：文本内容
+  /// color：颜色
+  ///
   static getTextNormal(
       {String text = '',
       Color color = Colors.white,
@@ -21,7 +26,10 @@ class WidgetText {
     );
   }
 
-  /// 多行
+  /// 多行文本
+  /// text：文本内容
+  /// color：颜色
+  /// fontSize：文本大小
   static getTextNormalMaxLine(
       {String text = '',
       Color color = Colors.white,
