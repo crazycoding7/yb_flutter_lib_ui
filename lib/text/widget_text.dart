@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 ///
 /// 常用文本展示
 class WidgetText {
