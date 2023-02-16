@@ -5,6 +5,7 @@ import 'package:timer_count_down/timer_controller.dart';
 import 'package:timer_count_down/timer_count_down.dart';
 
 import '../color/common_color.dart';
+import '../const.dart';
 import '../image/common_images.dart';
 import '../style/common_style.dart';
 import '../text/widget_text.dart';

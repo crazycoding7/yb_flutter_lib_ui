@@ -12,6 +12,7 @@ import 'agreement_richview.dart';
 
 typedef YbCallback = void Function();
 
+
 /// 隐私协议弹窗(First)
 class WidgetDialogAgreementApp extends Dialog {
   ///点击背景是否能够退出

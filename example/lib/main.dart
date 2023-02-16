@@ -1,6 +1,8 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:yb_flutter_lib_ui/button/widget_button.dart';
-import 'package:yb_flutter_lib_ui/text/widget_text.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:yb_flutter_lib_ui/agreement/agreement_richview.dart';
+import 'package:yb_flutter_lib_ui/appbar/yb_appbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,45 +11,70 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'UI组件库',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return ScreenUtilInit(
+      designSize: const Size(375, 812),
+      child: MaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          // This is the theme of your application.
+          //
+          // Try running your application with "flutter run". You'll see the
+          // application has a blue toolbar. Then, without quitting the app, try
+          // changing the primarySwatch below to Colors.green and then invoke
+          // "hot reload" (press "r" in the console where you ran "flutter run",
+          // or simply save your changes to "hot reload" in a Flutter IDE).
+          // Notice that the counter didn't reset back to zero; the application
+          // is not restarted.
+          primarySwatch: Colors.blue,
+        ),
+        home: const MainPage(),
       ),
-      home: const MyHomePage(title: 'UI组件库'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  final String title;
+class MainPage extends StatefulWidget {
+  const MainPage({Key? key}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<StatefulWidget> createState() {
+    return _MainPageState();
+  }
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MainPageState extends State<MainPage> {
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
+    return _homePage();
+  }
+
+  Widget _homePage() {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
+      appBar: YBAppBar.titleAppbar(title: '首页', context: context),
+      body: Container(
+        padding: const EdgeInsets.only(left: 8, right: 8),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            WidgetText.getTextNormal(
-                text: '组件：yb_flutter_lib_ui', color: Colors.red),
-            WidgetButton.getBtnNormal(
-              child: WidgetText.getTextNormal(text: '按钮'),
-              bgColor: Colors.green,
-              radius: 10,
-            ),
+          children: [
+            // CommonListItem.listItemWithRadio(1),
+            // CommonListItem.listItemWithSelect(text: '请选择'),
+            AgreementRichView(onClickCallback: (value) {
+              if (kDebugMode) {
+                print('点击');
+              }
+            })
           ],
         ),
       ),

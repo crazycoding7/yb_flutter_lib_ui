@@ -1,4 +1,3 @@
-String packageName = 'yb_flutter_lib_ui';
 class CommonImages {
   static const String commonTitleBackIcon = 'images/common_title_back_icon.png';
   static const String commonTitleBackBlackIcon =

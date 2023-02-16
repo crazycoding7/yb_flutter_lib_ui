@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../const.dart';
 import '../image/common_images.dart';
 
 typedef OnClickCallback = void Function(bool isSelected);

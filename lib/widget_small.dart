@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:yb_flutter_lib_ui/text/widget_text.dart';
-
 import 'color/common_color.dart';
 import 'image/common_images.dart';
 

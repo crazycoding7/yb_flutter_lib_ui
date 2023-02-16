@@ -5,6 +5,7 @@ import 'package:yb_flutter_lib_ui/widget_small.dart';
 
 import 'color/common_color.dart';
 import 'compose_text_edit_controller.dart';
+import 'const.dart';
 import 'image/common_images.dart';
 
 /// 搜索框
