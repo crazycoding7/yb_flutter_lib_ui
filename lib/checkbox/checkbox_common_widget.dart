@@ -39,8 +39,8 @@ class _CheckBoxCommonWidget extends State<CheckBoxCommonWidget> {
       },
       child: _isSelected
           ? Image.asset(CommonImages.commonCheckboxSelectedIcon,
-              package: 'lib_ui')
-          : Image.asset(CommonImages.commonCheckboxNullIcon, package: 'lib_ui'),
+              package: packageName)
+          : Image.asset(CommonImages.commonCheckboxNullIcon, package: packageName),
     );
   }
 }

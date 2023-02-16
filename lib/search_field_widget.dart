@@ -85,7 +85,7 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
         padding: EdgeInsets.only(right: 8.w),
         child: Image.asset(
           CommonImages.commonEditDelete,
-          package: 'lib_ui',
+          package: packageName,
         ),
       ),
       onTap: () {
@@ -117,7 +117,7 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
                   padding: EdgeInsets.only(left: 14.w, right: 12.w),
                   child: Image.asset(
                     CommonImages.commonSearchIcon,
-                    package: 'lib_ui',
+                    package: packageName,
                   ),
                 ),
                 Expanded(

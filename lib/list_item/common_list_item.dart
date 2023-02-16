@@ -319,7 +319,7 @@ class CommonListItem {
               visible: showRedDot,
               child: Image.asset(
                 CommonImages.pageCertifyRequireWarning,
-                package: 'lib_ui',
+                package: packageName,
               )),
           Visibility(
               visible: !showRedDot,
@@ -541,7 +541,7 @@ class CommonListItem {
         children: [
           Image.asset(
             leftIcon,
-            package: 'lib_ui',
+            package: packageName,
           ),
           SizedBox(
             width: 12.w,
@@ -553,7 +553,7 @@ class CommonListItem {
           Expanded(child: SizedBox()),
           Image.asset(
             rightImagePath,
-            package: 'lib_ui',
+            package: packageName,
           ),
         ],
       ),
@@ -589,7 +589,7 @@ class CommonListItem {
           Expanded(child: SizedBox()),
           Image.asset(
             rightImagePath,
-            package: 'lib_ui',
+            package: packageName,
           ),
         ],
       ),

@@ -41,7 +41,7 @@ class YBAppBar {
           },
           child: Image.asset(
             CommonImages.commonTitleBackIcon,
-            package: 'lib_ui',
+            package: packageName,
           )),
       actions: [
         TextButton(
@@ -76,7 +76,7 @@ class YBAppBar {
             onTap: rightCallback,
             child: Image.asset(
               rightImagePath,
-              package: 'lib_ui',
+              package: packageName,
             ))
       ],
       title: Text(
@@ -106,7 +106,7 @@ class YBAppBar {
             ),
             icon: Image.asset(
               rightImagePath,
-              package: 'lib_ui',
+              package: packageName,
             ),
             itemBuilder: (context) {
               List<PopupMenuEntry<int>> list = [];
