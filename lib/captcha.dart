@@ -7,10 +7,10 @@ import 'image/common_images.dart';
 
 ///图片验证码
 class Captcha extends StatefulWidget {
-  late final String mobile;
+  final String imageUrl;
   final TextEditingController imgCodeController;
 
-  Captcha(this.mobile, this.imgCodeController);
+  Captcha(this.imageUrl, this.imgCodeController);
 
   @override
   State<StatefulWidget> createState() {
@@ -34,10 +34,6 @@ class _CaptchaState extends State<Captcha> {
 
   @override
   Widget build(BuildContext context) {
-    String myBaseUrl = '';
-        // Config.baseUrl().substring(0, Config.baseUrl().length - 11);
-    String imageUrl =
-        '$myBaseUrl/imageCode/getImageCode?mobile=${widget.mobile}';
     return Row(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
@@ -84,7 +80,6 @@ class _CaptchaState extends State<Captcha> {
         SizedBox(width: 8),
         GestureDetector(
           onTap: () {
-            print(imageUrl);
             index++;
             setState(() {});
           },
@@ -94,7 +89,7 @@ class _CaptchaState extends State<Captcha> {
               child: CachedNetworkImage(
                 cacheKey:
                     'Cache${currentTimeMillis()} + ${index.toString()}',
-                imageUrl: imageUrl,
+                imageUrl: widget.imageUrl,
               )),
         )
       ],
