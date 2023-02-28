@@ -20,6 +20,7 @@ dependencies:
   fluttertoast: ^8.0.8
   timer_count_down: ^2.2.0
   get: 4.6.4
+  flutter_html: 3.0.0-alpha.5
 
 
 flutter:
