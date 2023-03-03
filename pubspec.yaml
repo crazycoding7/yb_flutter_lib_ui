@@ -1,6 +1,7 @@
 name: yb_flutter_lib_ui
-description: Dart package which manages the api domain.
-publish_to: none
+description: flutter quick ui lib, like button、text、image、redCount、bg_decoration...
+version: 0.0.2+2
+homepage: https://github.com/crazycoding7/flutter_lib_ui
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -13,14 +14,14 @@ dependencies:
     sdk: flutter
 
   cached_network_image: ^3.2.1
-  flutter_screenutil: 5.5.2
+  flutter_screenutil: ^5.5.2
   liquid_swipe: ^3.0.0
   common_utils: ^2.0.2
   flutter_smart_dialog: ^4.5.3
   fluttertoast: ^8.0.8
   timer_count_down: ^2.2.0
-  get: 4.6.4
-  flutter_html: 3.0.0-alpha.5
+  get: ^4.6.4
+  flutter_html: ^2.2.1
 
 
 flutter:

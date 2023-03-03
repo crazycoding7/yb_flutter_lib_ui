@@ -5,3 +5,7 @@
 ## 0.0.2
 
 * Updated README.
+
+## 0.0.2+2
+
+* add common widgets.
