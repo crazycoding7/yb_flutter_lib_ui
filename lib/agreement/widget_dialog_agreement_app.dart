@@ -5,13 +5,12 @@ import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:yb_flutter_lib_ui/agreement/widget_dialog_agreement_second.dart';
 
 import '../button/widget_button.dart';
-import '../color/common_color.dart';
+import '../color/ui_common_color.dart';
 import '../text/widget_text.dart';
 import '../widget_small.dart';
 import 'agreement_richview.dart';
 
 typedef YbCallback = void Function();
-
 
 /// 隐私协议弹窗(First)
 class WidgetDialogAgreementApp extends Dialog {
@@ -70,7 +69,7 @@ class WidgetDialogAgreementApp extends Dialog {
                 children: [
                   WidgetText.getTextNormal(
                     text: '隐私政策',
-                    color: CommonColors.color_333333,
+                    color: UiCommonColors.color_333333,
                     fontSize: 16.sp,
                     fontWeight: FontWeight.bold,
                   ),
@@ -85,12 +84,13 @@ class WidgetDialogAgreementApp extends Dialog {
                             "\n\n"
                             "为了便于您更详细了解您的权利和义务，请您仔细阅读",
                         style: TextStyle(
-                            color: CommonColors.color_666666, fontSize: 12.sp),
+                            color: UiCommonColors.color_666666,
+                            fontSize: 12.sp),
                         children: [
                           TextSpan(
                               text: "《用户协议》",
-                              style:
-                                  const TextStyle(color: CommonColors.appMain),
+                              style: const TextStyle(
+                                  color: UiCommonColors.appMain),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
                                   SmartDialog.dismiss();
@@ -100,8 +100,8 @@ class WidgetDialogAgreementApp extends Dialog {
                           const TextSpan(text: '及'),
                           TextSpan(
                               text: "《隐私政策》",
-                              style:
-                                  const TextStyle(color: CommonColors.appMain),
+                              style: const TextStyle(
+                                  color: UiCommonColors.appMain),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
                                   SmartDialog.dismiss();
@@ -150,7 +150,7 @@ class WidgetDialogAgreementApp extends Dialog {
                 SizedBox(
                     height: 44.h,
                     child: const VerticalDivider(
-                      color: CommonColors.colorF5F5F5,
+                      color: UiCommonColors.colorF5F5F5,
                     )),
                 Expanded(
                   child: WidgetButton.getBtnOldNormal(

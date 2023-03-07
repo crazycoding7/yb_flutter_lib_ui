@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../color/common_color.dart';
+import '../color/ui_common_color.dart';
 import '../image/common_images.dart';
 import '../text/widget_text.dart';
 
@@ -28,7 +28,7 @@ class TitleWidget extends StatefulWidget {
       this.title = "",
       this.titleIconPath = "",
       this.titleRightIconPath = "",
-      this.color = CommonColors.color_1AB370,
+      this.color = UiCommonColors.color_1AB370,
       this.isBlackBackIcon = false,
       this.isHiddenLeftIcon = false,
       this.onBackClickCallback,

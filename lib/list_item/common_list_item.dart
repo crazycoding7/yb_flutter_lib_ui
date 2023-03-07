@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:timer_count_down/timer_controller.dart';
 import 'package:timer_count_down/timer_count_down.dart';
 
-import '../color/common_color.dart';
+import '../color/ui_common_color.dart';
 import '../const.dart';
 import '../image/common_images.dart';
 import '../style/common_style.dart';
@@ -37,7 +37,7 @@ class CommonListItem {
               text,
               style: TextStyle(
                 fontSize: 14,
-                color: CommonColors.black_333333,
+                color: UiCommonColors.black_333333,
               ),
             ),
           ),
@@ -47,7 +47,8 @@ class CommonListItem {
           Expanded(
             child: Text(
               hint,
-              style: TextStyle(fontSize: 14, color: CommonColors.black_333333),
+              style:
+                  TextStyle(fontSize: 14, color: UiCommonColors.black_333333),
             ),
           )
         ],
@@ -67,7 +68,7 @@ class CommonListItem {
             text,
             style: TextStyle(
               fontSize: 14,
-              color: CommonColors.black_333333,
+              color: UiCommonColors.black_333333,
             ),
           ),
           SizedBox(
@@ -76,7 +77,8 @@ class CommonListItem {
           Expanded(
             child: Text(
               hint,
-              style: TextStyle(fontSize: 14, color: CommonColors.black_333333),
+              style:
+                  TextStyle(fontSize: 14, color: UiCommonColors.black_333333),
             ),
           ),
           Image.asset(CommonImages.commonToRight),
@@ -134,8 +136,8 @@ class CommonListItem {
           return WidgetText.getTextNormal(
             text: ' ${down == 0 || down == 60 ? '获取验证码' : '已发送(${down})'}',
             color: down == 0 || down == 60
-                ? CommonColors.orange_ff8200
-                : CommonColors.orange_ff8200.withOpacity(0.5),
+                ? UiCommonColors.orange_ff8200
+                : UiCommonColors.orange_ff8200.withOpacity(0.5),
             fontSize: 14.sp,
           );
         },
@@ -158,27 +160,28 @@ class CommonListItem {
         children: <Widget>[
           Expanded(
             child: TextField(
-              style: TextStyle(fontSize: 18, color: CommonColors.black_333333),
+              style:
+                  TextStyle(fontSize: 18, color: UiCommonColors.black_333333),
               controller: controller,
               keyboardAppearance: Brightness.light,
-              cursorColor: CommonColors.appMain,
+              cursorColor: UiCommonColors.appMain,
               decoration: InputDecoration(
                 hintText: hint,
                 hintStyle: TextStyle(
-                    color: CommonColors.color_999999, fontSize: 14.sp),
-                focusColor: CommonColors.appMain,
-                hoverColor: CommonColors.appMain,
+                    color: UiCommonColors.color_999999, fontSize: 14.sp),
+                focusColor: UiCommonColors.appMain,
+                hoverColor: UiCommonColors.appMain,
                 border: UnderlineInputBorder(
                   //选中时下边框颜色
                   borderSide: BorderSide(color: Colors.red),
                 ),
                 enabledBorder: UnderlineInputBorder(
                   //选中时下边框颜色
-                  borderSide: BorderSide(color: CommonColors.grey_f5f5f5),
+                  borderSide: BorderSide(color: UiCommonColors.grey_f5f5f5),
                 ),
                 focusedBorder: UnderlineInputBorder(
                   //选中时下边框颜色
-                  borderSide: BorderSide(color: CommonColors.appMain),
+                  borderSide: BorderSide(color: UiCommonColors.appMain),
                 ),
               ),
               textAlign: TextAlign.start,
@@ -217,7 +220,7 @@ class CommonListItem {
                 text,
                 style: TextStyle(
                   fontSize: 14,
-                  color: CommonColors.black_333333,
+                  color: UiCommonColors.black_333333,
                 ),
               ),
             ),
@@ -227,7 +230,7 @@ class CommonListItem {
             Expanded(
               child: TextField(
                 style:
-                    TextStyle(fontSize: 14, color: CommonColors.black_333333),
+                    TextStyle(fontSize: 14, color: UiCommonColors.black_333333),
                 controller: controller,
                 keyboardAppearance: Brightness.light,
                 scrollPadding: EdgeInsets.zero,
@@ -237,7 +240,7 @@ class CommonListItem {
                     hintText: hint,
                     hintStyle: TextStyle(
                       fontSize: 14,
-                      color: CommonColors.grey_999999,
+                      color: UiCommonColors.grey_999999,
                     ),
                     border: InputBorder.none),
                 textAlign: TextAlign.start,
@@ -274,7 +277,7 @@ class CommonListItem {
               text,
               style: TextStyle(
                 fontSize: 14,
-                color: CommonColors.black_333333,
+                color: UiCommonColors.black_333333,
               ),
             ),
           ),
@@ -333,7 +336,7 @@ class CommonListItem {
               text,
               style: TextStyle(
                 fontSize: 14,
-                color: CommonColors.black_333333,
+                color: UiCommonColors.black_333333,
               ),
             ),
           ),
@@ -350,8 +353,8 @@ class CommonListItem {
                   color: hint.contains('请输入') ||
                           hint.contains('请选择') ||
                           hint.contains('点击')
-                      ? CommonColors.grey_999999
-                      : CommonColors.black_333333,
+                      ? UiCommonColors.grey_999999
+                      : UiCommonColors.black_333333,
                 ),
               ),
             ),
@@ -367,7 +370,7 @@ class CommonListItem {
   static Widget listItemWithTitleAndSub(
       {String text = '',
       String hint = '',
-      Color hintColor = CommonColors.black_333333,
+      Color hintColor = UiCommonColors.black_333333,
       VoidCallback? onTap}) {
     return GestureDetector(
       onTap: onTap,
@@ -385,7 +388,7 @@ class CommonListItem {
                 text,
                 style: TextStyle(
                   fontSize: 14.sp,
-                  color: CommonColors.black_333333,
+                  color: UiCommonColors.black_333333,
                 ),
               ),
             ),
@@ -425,7 +428,7 @@ class CommonListItem {
               '性别',
               style: TextStyle(
                 fontSize: 14,
-                color: CommonColors.black_333333,
+                color: UiCommonColors.black_333333,
               ),
             ),
           ),
@@ -438,7 +441,7 @@ class CommonListItem {
               children: [
                 Theme(
                   data: ThemeData(
-                    unselectedWidgetColor: CommonColors.grey_eeeeee,
+                    unselectedWidgetColor: UiCommonColors.grey_eeeeee,
                   ),
                   child: Radio(
                     materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
@@ -446,7 +449,7 @@ class CommonListItem {
                       horizontal: VisualDensity.minimumDensity,
                       vertical: VisualDensity.minimumDensity,
                     ),
-                    activeColor: CommonColors.appMain,
+                    activeColor: UiCommonColors.appMain,
                     value: 1,
                     groupValue: groupValue,
                     onChanged: (value) {},
@@ -457,7 +460,7 @@ class CommonListItem {
                 SizedBox(width: 45),
                 Theme(
                   data: ThemeData(
-                    unselectedWidgetColor: CommonColors.grey_eeeeee,
+                    unselectedWidgetColor: UiCommonColors.grey_eeeeee,
                   ),
                   child: Radio(
                     materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
@@ -465,7 +468,7 @@ class CommonListItem {
                       horizontal: VisualDensity.minimumDensity,
                       vertical: VisualDensity.minimumDensity,
                     ),
-                    activeColor: CommonColors.appMain,
+                    activeColor: UiCommonColors.appMain,
                     value: 2,
                     groupValue: groupValue,
                     onChanged: (value) {},
@@ -501,7 +504,7 @@ class CommonListItem {
               '职业类型',
               style: TextStyle(
                 fontSize: 14,
-                color: CommonColors.black_333333,
+                color: UiCommonColors.black_333333,
               ),
             ),
           ),
@@ -514,12 +517,12 @@ class CommonListItem {
               children: [
                 Checkbox(
                     value: first,
-                    activeColor: CommonColors.appMain,
+                    activeColor: UiCommonColors.appMain,
                     onChanged: firstCallBack),
                 Text('中医专业'),
                 Checkbox(
                     value: second,
-                    activeColor: CommonColors.appMain,
+                    activeColor: UiCommonColors.appMain,
                     onChanged: secondCallBack),
                 Text('中西医结合专业')
               ],
@@ -549,7 +552,8 @@ class CommonListItem {
           ),
           Text(
             title,
-            style: TextStyle(fontSize: 16.sp, color: CommonColors.black_333333),
+            style:
+                TextStyle(fontSize: 16.sp, color: UiCommonColors.black_333333),
           ),
           Expanded(child: SizedBox()),
           Image.asset(
@@ -577,13 +581,13 @@ class CommonListItem {
               Text(
                 title,
                 style: TextStyle(
-                    fontSize: 16.sp, color: CommonColors.black_333333),
+                    fontSize: 16.sp, color: UiCommonColors.black_333333),
               ),
               SizedBox(height: 4),
               Text(
                 subTitle,
-                style:
-                    TextStyle(fontSize: 12.sp, color: CommonColors.grey_999999),
+                style: TextStyle(
+                    fontSize: 12.sp, color: UiCommonColors.grey_999999),
               ),
             ],
           ),

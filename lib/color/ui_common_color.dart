@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 /// 图片资源
-class CommonColors {
+class UiCommonColors {
   ///主色调
   static const Color color_1AB370 = Color(0xff1AB370);
   static const Color color_191AB370 = Color(0x191AB370);

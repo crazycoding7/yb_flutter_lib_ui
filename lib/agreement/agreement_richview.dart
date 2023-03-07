@@ -5,7 +5,7 @@ import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:get/get.dart';
 
 import '../checkbox/checkbox_common_widget.dart';
-import '../color/common_color.dart';
+import '../color/ui_common_color.dart';
 
 class AgreementRichView extends StatelessWidget {
   final Function onClickCallback;
@@ -29,19 +29,19 @@ class AgreementRichView extends StatelessWidget {
         RichText(
           text: TextSpan(
               text: "我已阅读并同意",
-              style:
-                  TextStyle(color: CommonColors.black_333333, fontSize: 12.sp),
+              style: TextStyle(
+                  color: UiCommonColors.black_333333, fontSize: 12.sp),
               children: [
                 TextSpan(
                     text: "《用户协议》",
-                    style: const TextStyle(color: CommonColors.appMain),
+                    style: const TextStyle(color: UiCommonColors.appMain),
                     recognizer: TapGestureRecognizer()
                       ..onTap = () {
                         _controller.getData(AgreementConfig.doctor_user);
                       }),
                 TextSpan(
                     text: "《隐私政策》",
-                    style: const TextStyle(color: CommonColors.appMain),
+                    style: const TextStyle(color: UiCommonColors.appMain),
                     recognizer: TapGestureRecognizer()
                       ..onTap = () {
                         _controller.getData(AgreementConfig.doctor_privacy);

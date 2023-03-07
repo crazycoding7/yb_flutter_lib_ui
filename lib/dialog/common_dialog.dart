@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../border/common_border.dart';
-import '../color/common_color.dart';
+import '../color/ui_common_color.dart';
 import '../style/common_style.dart';
 
 class CommonDialog {
@@ -35,7 +35,7 @@ class CommonDialog {
               Text(
                 title,
                 style: TextStyle(
-                    color: CommonColors.black_333333,
+                    color: UiCommonColors.black_333333,
                     fontSize: 16.sp,
                     fontWeight: FontWeight.bold),
               ),
@@ -47,7 +47,7 @@ class CommonDialog {
                 child: Text(
                   tip,
                   style: TextStyle(
-                      fontSize: 14.sp, color: CommonColors.grey_999999),
+                      fontSize: 14.sp, color: UiCommonColors.grey_999999),
                 ),
               ),
               Expanded(child: SizedBox()),
@@ -72,7 +72,8 @@ class CommonDialog {
                           child: Text(
                             leftTip,
                             style: TextStyle(
-                                color: CommonColors.grey_999999, fontSize: 16),
+                                color: UiCommonColors.grey_999999,
+                                fontSize: 16),
                           ),
                         ),
                       ),
@@ -87,7 +88,7 @@ class CommonDialog {
                           child: Text(
                             rightTip,
                             style: TextStyle(
-                                color: CommonColors.appMain, fontSize: 16),
+                                color: UiCommonColors.appMain, fontSize: 16),
                           ),
                         ),
                       ),
@@ -139,7 +140,7 @@ class CommonDialog {
                     child: Text(
                       title,
                       style: TextStyle(
-                          color: CommonColors.black_333333,
+                          color: UiCommonColors.black_333333,
                           fontSize: 16.sp,
                           fontWeight: FontWeight.bold),
                     ),
@@ -153,17 +154,17 @@ class CommonDialog {
                     child: TextField(
                       maxLines: 100,
                       maxLength: maxLength,
-                      cursorColor: CommonColors.appMain,
+                      cursorColor: UiCommonColors.appMain,
                       controller: textEditingController,
                       keyboardAppearance: Brightness.light,
                       decoration: InputDecoration(
                         filled: true,
-                        fillColor: CommonColors.grey_f5f5f5,
+                        fillColor: UiCommonColors.grey_f5f5f5,
                         hintText: hint,
                         counterText: '',
                         //去掉最大字符显示
                         hintStyle: TextStyle(
-                            fontSize: 14, color: CommonColors.grey_999999),
+                            fontSize: 14, color: UiCommonColors.grey_999999),
                         contentPadding: EdgeInsets.only(left: 12, top: 12),
 
                         border: CommonBorder.outLineBorder(),
@@ -190,7 +191,7 @@ class CommonDialog {
                     child: Text(
                       tipText,
                       style: CommonTextStyle.commonStyle(
-                          fontSize: 10.sp, color: CommonColors.grey_999999),
+                          fontSize: 10.sp, color: UiCommonColors.grey_999999),
                     ),
                   ),
                   SizedBox(height: 24.h),
@@ -211,7 +212,7 @@ class CommonDialog {
                               child: Text(
                                 '取消',
                                 style: TextStyle(
-                                    color: CommonColors.grey_999999,
+                                    color: UiCommonColors.grey_999999,
                                     fontSize: 16),
                               ),
                             ),
@@ -227,7 +228,8 @@ class CommonDialog {
                               child: Text(
                                 '确认',
                                 style: TextStyle(
-                                    color: CommonColors.appMain, fontSize: 16),
+                                    color: UiCommonColors.appMain,
+                                    fontSize: 16),
                               ),
                             ),
                           ),
@@ -274,7 +276,7 @@ class CommonDialog {
                   child: Text(
                     title,
                     style: TextStyle(
-                        color: CommonColors.black_333333,
+                        color: UiCommonColors.black_333333,
                         fontSize: 16.sp,
                         fontWeight: FontWeight.bold),
                   ),
@@ -288,17 +290,17 @@ class CommonDialog {
                   child: TextField(
                     maxLines: 100,
                     maxLength: maxLength,
-                    cursorColor: CommonColors.appMain,
+                    cursorColor: UiCommonColors.appMain,
                     controller: textEditingController,
                     keyboardAppearance: Brightness.light,
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: CommonColors.grey_f5f5f5,
+                      fillColor: UiCommonColors.grey_f5f5f5,
                       hintText: hint,
                       counterText: '',
                       //去掉最大字符显示
                       hintStyle: TextStyle(
-                          fontSize: 14, color: CommonColors.grey_999999),
+                          fontSize: 14, color: UiCommonColors.grey_999999),
                       contentPadding: EdgeInsets.only(left: 12, top: 12),
 
                       border: CommonBorder.outLineBorder(),
@@ -332,7 +334,7 @@ class CommonDialog {
                             child: Text(
                               '取消',
                               style: TextStyle(
-                                  color: CommonColors.grey_999999,
+                                  color: UiCommonColors.grey_999999,
                                   fontSize: 16),
                             ),
                           ),
@@ -348,7 +350,7 @@ class CommonDialog {
                             child: Text(
                               '确认',
                               style: TextStyle(
-                                  color: CommonColors.appMain, fontSize: 16),
+                                  color: UiCommonColors.appMain, fontSize: 16),
                             ),
                           ),
                         ),
@@ -391,7 +393,7 @@ class CommonDialog {
                     child: Text(
                       title,
                       style: TextStyle(
-                          color: CommonColors.black_333333, fontSize: 16.sp),
+                          color: UiCommonColors.black_333333, fontSize: 16.sp),
                     ),
                   ),
                   Expanded(
@@ -400,13 +402,13 @@ class CommonDialog {
                       child: TextField(
                         maxLines: 100,
                         maxLength: 100,
-                        cursorColor: CommonColors.appMain,
+                        cursorColor: UiCommonColors.appMain,
                         controller: textEditingController,
                         keyboardAppearance: Brightness.light,
                         decoration: InputDecoration(
                           hintText: '请输入',
                           hintStyle: TextStyle(
-                              fontSize: 14, color: CommonColors.grey_999999),
+                              fontSize: 14, color: UiCommonColors.grey_999999),
                           contentPadding: EdgeInsets.only(left: 12, top: 12),
 
                           border: CommonBorder.outLineBorder(),
@@ -440,13 +442,13 @@ class CommonDialog {
                               ),
                               side: BorderSide(
                                   width: 0.5.w,
-                                  color: CommonColors.grey_e5e5e5),
+                                  color: UiCommonColors.grey_e5e5e5),
                             ),
                             onPressed: () => Navigator.of(context).pop(),
                             child: Text(
                               '取消',
                               style:
-                                  TextStyle(color: CommonColors.black_333333),
+                                  TextStyle(color: UiCommonColors.black_333333),
                             ),
                           ),
                         ),
@@ -456,12 +458,12 @@ class CommonDialog {
                         Expanded(
                           child: OutlinedButton(
                               style: OutlinedButton.styleFrom(
-                                backgroundColor: CommonColors.appMain,
+                                backgroundColor: UiCommonColors.appMain,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(22.r),
                                 ),
                                 side: BorderSide(
-                                    width: 1.w, color: CommonColors.appMain),
+                                    width: 1.w, color: UiCommonColors.appMain),
                               ),
                               onPressed: confirmCallback,
                               child: Text(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:yb_flutter_lib_ui/text/widget_text.dart';
-import 'color/common_color.dart';
+import '../color/ui_common_color.dart';
 import 'image/common_images.dart';
 
 class WidgetSmall {
@@ -25,7 +25,7 @@ class WidgetSmall {
   /// 圆形背景(带边框)
   static bgRadiusCircleWithBorder(
           {Color color = Colors.transparent,
-          borderColor = CommonColors.colorE5E5E5,
+          borderColor = UiCommonColors.colorE5E5E5,
           double radius = 0,
           double width = 1.0}) =>
       BoxDecoration(
@@ -368,20 +368,20 @@ class WidgetSmall {
         children: [
           _layoutFourStatContent(
               stat: stat1,
-              statColor: CommonColors.color_1AB370,
-              bgColor: CommonColors.color_051AB270,
+              statColor: UiCommonColors.color_1AB370,
+              bgColor: UiCommonColors.color_051AB270,
               name: name1),
           const Expanded(child: SizedBox()),
           _layoutFourStatContent(
               stat: stat2,
-              statColor: CommonColors.colorFF8200,
-              bgColor: CommonColors.color_0CFF8200,
+              statColor: UiCommonColors.colorFF8200,
+              bgColor: UiCommonColors.color_0CFF8200,
               name: name2),
           const Expanded(child: SizedBox()),
           _layoutFourStatContent(
               stat: stat4,
-              statColor: CommonColors.color_1890FF,
-              bgColor: CommonColors.color_0C1890FF,
+              statColor: UiCommonColors.color_1890FF,
+              bgColor: UiCommonColors.color_0C1890FF,
               name: name4),
         ],
       ),
@@ -409,7 +409,7 @@ class WidgetSmall {
         ),
         Text(
           name,
-          style: TextStyle(color: CommonColors.color_666666, fontSize: 14.sp),
+          style: TextStyle(color: UiCommonColors.color_666666, fontSize: 14.sp),
         ),
       ],
     );
@@ -482,10 +482,10 @@ class WidgetSmall {
       decoration: InputDecoration(
           hintText: hintText,
           hintStyle:
-              TextStyle(color: CommonColors.color_999999, fontSize: 14.w),
+              TextStyle(color: UiCommonColors.color_999999, fontSize: 14.w),
           border: InputBorder.none),
       style: TextStyle(
-        color: CommonColors.color_333333,
+        color: UiCommonColors.color_333333,
         fontSize: 14.sp,
       ),
     );
@@ -508,7 +508,7 @@ class WidgetSmall {
             width: double.infinity,
             height: 36.w,
             decoration: WidgetSmall.bgRadius(
-                color: CommonColors.colorF5F5F5, radius: 22),
+                color: UiCommonColors.colorF5F5F5, radius: 22),
             child: Row(
               children: [
                 Padding(
@@ -529,7 +529,7 @@ class WidgetSmall {
           ),
           WidgetText.getTextNormal(
             text: '搜索',
-            color: CommonColors.color_1AB370,
+            color: UiCommonColors.color_1AB370,
             fontSize: 14.sp,
             fontWeight: FontWeight.bold,
           ),
@@ -541,7 +541,7 @@ class WidgetSmall {
   /// 分割线
   static genDivider() {
     return const Divider(
-      color: CommonColors.colorE5E5E5,
+      color: UiCommonColors.colorE5E5E5,
       height: 1,
     );
   }
@@ -552,7 +552,7 @@ class WidgetSmall {
       children: [
         const Expanded(
             child: Divider(
-          color: CommonColors.colorE5E5E5,
+          color: UiCommonColors.colorE5E5E5,
           height: 1,
         )),
         SizedBox(
@@ -562,7 +562,7 @@ class WidgetSmall {
           child: Container(
             width: 4.w,
             height: 4.w,
-            color: CommonColors.colorEEEEEE,
+            color: UiCommonColors.colorEEEEEE,
           ),
         ),
         SizedBox(
@@ -570,7 +570,7 @@ class WidgetSmall {
         ),
         const Expanded(
             child: Divider(
-          color: CommonColors.colorE5E5E5,
+          color: UiCommonColors.colorE5E5E5,
           height: 1,
         )),
       ],

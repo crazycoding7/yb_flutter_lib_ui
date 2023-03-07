@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-import '../color/common_color.dart';
+import '../color/ui_common_color.dart';
 
 class ToastUtil {
   static show(
@@ -16,7 +16,7 @@ class ToastUtil {
     String message, {
     alignment = Alignment.center,
     backgroundColor = Colors.white,
-    textColor = CommonColors.black_333333,
+    textColor = UiCommonColors.black_333333,
   }) {
     Fluttertoast.showToast(
         msg: message,

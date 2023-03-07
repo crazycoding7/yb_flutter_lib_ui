@@ -5,7 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:yb_flutter_lib_ui/agreement/widget_dialog_agreement_app.dart';
 
 import '../button/widget_button.dart';
-import '../color/common_color.dart';
+import '../color/ui_common_color.dart';
 import '../text/widget_text.dart';
 import '../widget_small.dart';
 
@@ -61,7 +61,7 @@ class WidgetDialogAgreementSecond extends Dialog {
                 children: [
                   WidgetText.getTextNormal(
                     text: '温馨提示',
-                    color: CommonColors.color_333333,
+                    color: UiCommonColors.color_333333,
                     fontSize: 16.sp,
                     fontWeight: FontWeight.bold,
                   ),
@@ -73,7 +73,7 @@ class WidgetDialogAgreementSecond extends Dialog {
                       text:
                           "1.您需要同意本隐私权政策和用户协议才能继续使用医联\n\n 2.若您不同意本隐私权政策和用户协议，很遗憾我们将无法为您提供服务",
                       style: TextStyle(
-                          color: CommonColors.color_666666, fontSize: 12.sp),
+                          color: UiCommonColors.color_666666, fontSize: 12.sp),
                     ),
                   ),
                 ],
@@ -98,7 +98,7 @@ class WidgetDialogAgreementSecond extends Dialog {
                 SizedBox(
                     height: 44.h,
                     child: const VerticalDivider(
-                      color: CommonColors.colorF5F5F5,
+                      color: UiCommonColors.colorF5F5F5,
                     )),
                 Expanded(
                   child: WidgetButton.getBtnOldNormal(

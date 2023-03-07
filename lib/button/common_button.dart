@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../color/common_color.dart';
+import '../color/ui_common_color.dart';
 import '../style/common_style.dart';
+
 ///
 /// 项目中经常使用到的按钮
 class CommonButton {
@@ -20,7 +21,7 @@ class CommonButton {
           height: 44.h,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-              color: CommonColors.appMain,
+              color: UiCommonColors.appMain,
               borderRadius: BorderRadius.circular(22)),
           child: Text(
             title,
@@ -42,12 +43,12 @@ class CommonButton {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(22.0.r),
           ),
-          side: BorderSide(width: 1.w, color: CommonColors.red_ff4d4f),
+          side: BorderSide(width: 1.w, color: UiCommonColors.red_ff4d4f),
         ),
         onPressed: onTap,
         child: Text(
           title,
-          style: TextStyle(color: CommonColors.red_ff4d4f),
+          style: TextStyle(color: UiCommonColors.red_ff4d4f),
         ),
       ),
     );
@@ -63,7 +64,7 @@ class CommonButton {
       child: Container(
           height: height,
           decoration: CommonDecoration.containerDecoration(
-              color: CommonColors.appMain, radius: height / 2),
+              color: UiCommonColors.appMain, radius: height / 2),
           alignment: Alignment.center,
           child: Text(text!,
               style: CommonTextStyle.commonStyle(

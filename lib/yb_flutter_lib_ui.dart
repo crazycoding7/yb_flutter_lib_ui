@@ -11,8 +11,6 @@ export 'border/common_border.dart';
 export 'button/common_button.dart';
 export 'button/widget_button.dart';
 export 'checkbox/checkbox_common_widget.dart';
-export 'color/common_color.dart';
-export 'colors/rgb_colors.dart';
 export 'dialog/common_dialog.dart';
 export 'dialog/widget_dialog.dart';
 export 'divider/widget_divider.dart';

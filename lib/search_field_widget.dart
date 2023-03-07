@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:yb_flutter_lib_ui/text/widget_text.dart';
 import 'package:yb_flutter_lib_ui/widget_small.dart';
 
-import 'color/common_color.dart';
+import '../color/ui_common_color.dart';
 import 'compose_text_edit_controller.dart';
 import 'const.dart';
 import 'image/common_images.dart';
@@ -73,10 +73,10 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
           hintText: widget.hintText,
           contentPadding: EdgeInsets.only(bottom: 11),
           hintStyle:
-              TextStyle(color: CommonColors.color_999999, fontSize: 14.w),
+              TextStyle(color: UiCommonColors.color_999999, fontSize: 14.w),
           border: InputBorder.none),
       style: TextStyle(
-        color: CommonColors.color_333333,
+        color: UiCommonColors.color_333333,
         fontSize: 14.sp,
       ),
     );
@@ -110,7 +110,8 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
             width: double.infinity,
             height: 36.w,
             decoration: WidgetSmall.bgRadius(
-                color: widget.isWithe ? Colors.white : CommonColors.colorF5F5F5,
+                color:
+                    widget.isWithe ? Colors.white : UiCommonColors.colorF5F5F5,
                 radius: 22),
             child: Row(
               children: [
@@ -145,7 +146,7 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
                   },
                   child: WidgetText.getTextNormal(
                     text: '搜索',
-                    color: CommonColors.color_1AB370,
+                    color: UiCommonColors.color_1AB370,
                     fontSize: 14.sp,
                     fontWeight: FontWeight.bold,
                   ),

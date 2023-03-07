@@ -2,7 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'color/common_color.dart';
+import '../color/ui_common_color.dart';
 import 'image/common_images.dart';
 
 ///图片验证码
@@ -41,8 +41,8 @@ class _CaptchaState extends State<Captcha> {
           child: Container(
             height: 44,
             child: TextField(
-              style:
-                  TextStyle(color: CommonColors.color_333333, fontSize: 18.sp),
+              style: TextStyle(
+                  color: UiCommonColors.color_333333, fontSize: 18.sp),
               cursorColor: Colors.grey,
               keyboardType: TextInputType.number,
               keyboardAppearance: Brightness.light,
@@ -53,7 +53,7 @@ class _CaptchaState extends State<Captcha> {
               decoration: InputDecoration(
                   hintText: "请输入图形验证码",
                   hintStyle: TextStyle(
-                      color: CommonColors.color_999999, fontSize: 14.sp),
+                      color: UiCommonColors.color_999999, fontSize: 14.sp),
                   focusColor: Colors.grey,
                   hoverColor: Colors.grey,
                   border: UnderlineInputBorder(
@@ -62,11 +62,11 @@ class _CaptchaState extends State<Captcha> {
                   ),
                   enabledBorder: UnderlineInputBorder(
                     //选中时下边框颜色
-                    borderSide: BorderSide(color: CommonColors.grey_f5f5f5),
+                    borderSide: BorderSide(color: UiCommonColors.grey_f5f5f5),
                   ),
                   focusedBorder: UnderlineInputBorder(
                     //选中时下边框颜色
-                    borderSide: BorderSide(color: CommonColors.appMain),
+                    borderSide: BorderSide(color: UiCommonColors.appMain),
                   ),
                   suffixIcon: IconButton(
                     onPressed: () {
@@ -87,8 +87,7 @@ class _CaptchaState extends State<Captcha> {
               alignment: Alignment.bottomCenter,
               width: 100,
               child: CachedNetworkImage(
-                cacheKey:
-                    'Cache${currentTimeMillis()} + ${index.toString()}',
+                cacheKey: 'Cache${currentTimeMillis()} + ${index.toString()}',
                 imageUrl: widget.imageUrl,
               )),
         )
@@ -97,7 +96,6 @@ class _CaptchaState extends State<Captcha> {
   }
 }
 
-
 int currentTimeMillis() {
-return DateTime.now().millisecondsSinceEpoch;
+  return DateTime.now().millisecondsSinceEpoch;
 }

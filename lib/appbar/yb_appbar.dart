@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:yb_flutter_lib_ui/appbar/title_widget.dart';
 
-import '../color/common_color.dart';
+import '../color/ui_common_color.dart';
 import '../const.dart';
 import '../image/common_images.dart';
 import '../style/common_style.dart';
@@ -10,17 +10,15 @@ import '../style/common_style.dart';
 typedef YbCallbackInt = void Function(int num);
 
 class YBAppBar {
-
   static Size getTitleHeightSize() =>
       Size.fromHeight(ScreenUtil().statusBarHeight + 50.w);
-
 
   /// 标准title(左,中布局) widget
   static PreferredSizeWidget getTitleAppBarNormal(
       {String title = '',
-        bool isHiddenLeftIcon = false,
-        OnBackClickCallback? onBackClickCallback,
-        bool isWhiteTheme = false}) {
+      bool isHiddenLeftIcon = false,
+      OnBackClickCallback? onBackClickCallback,
+      bool isWhiteTheme = false}) {
     return PreferredSize(
         child: TitleWidget(
           title: title,
@@ -63,7 +61,7 @@ class YBAppBar {
         style: TextStyle(fontSize: 18),
       ),
       centerTitle: true,
-      backgroundColor: CommonColors.appMain,
+      backgroundColor: UiCommonColors.appMain,
       shadowColor: Colors.transparent,
     );
   }
@@ -87,7 +85,7 @@ class YBAppBar {
         style: TextStyle(fontSize: 18),
       ),
       centerTitle: true,
-      backgroundColor: CommonColors.appMain,
+      backgroundColor: UiCommonColors.appMain,
       shadowColor: Colors.transparent,
     );
   }
@@ -119,7 +117,7 @@ class YBAppBar {
                   child: Text(
                     "邀请患者",
                     style: CommonTextStyle.commonStyle(
-                        color: CommonColors.black_333333, fontSize: 14),
+                        color: UiCommonColors.black_333333, fontSize: 14),
                   ),
                 ),
               );
@@ -134,7 +132,7 @@ class YBAppBar {
                   child: Text(
                     "新建分组",
                     style: CommonTextStyle.commonStyle(
-                        color: CommonColors.black_333333, fontSize: 14),
+                        color: UiCommonColors.black_333333, fontSize: 14),
                   ),
                 ),
               );
@@ -147,7 +145,7 @@ class YBAppBar {
         style: TextStyle(fontSize: 18),
       ),
       centerTitle: true,
-      backgroundColor: CommonColors.appMain,
+      backgroundColor: UiCommonColors.appMain,
       shadowColor: Colors.transparent,
     );
   }

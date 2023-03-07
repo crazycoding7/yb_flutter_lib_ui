@@ -6,7 +6,7 @@ import 'package:yb_flutter_lib_ui/agreement/widget_dialog_agreement_app.dart';
 import 'package:yb_flutter_lib_ui/agreement/widget_dialog_agreement_second.dart';
 
 import '../button/widget_button.dart';
-import '../color/common_color.dart';
+import '../color/ui_common_color.dart';
 import '../text/widget_text.dart';
 import '../widget_small.dart';
 import 'agreement_richview.dart';
@@ -68,7 +68,7 @@ class WidgetDialogAgreementUpdate extends Dialog {
                 children: [
                   WidgetText.getTextNormal(
                     text: '隐私政策条款和条件已有更新',
-                    color: CommonColors.color_333333,
+                    color: UiCommonColors.color_333333,
                     fontSize: 16.sp,
                     fontWeight: FontWeight.bold,
                   ),
@@ -79,12 +79,13 @@ class WidgetDialogAgreementUpdate extends Dialog {
                     text: TextSpan(
                         text: "感谢您信任并使用易赋诊！\n\n",
                         style: TextStyle(
-                            color: CommonColors.color_666666, fontSize: 12.sp),
+                            color: UiCommonColors.color_666666,
+                            fontSize: 12.sp),
                         children: [
                           TextSpan(
                               text: "《隐私政策》",
-                              style:
-                                  const TextStyle(color: CommonColors.appMain),
+                              style: const TextStyle(
+                                  color: UiCommonColors.appMain),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
                                   SmartDialog.dismiss();
@@ -113,7 +114,7 @@ class WidgetDialogAgreementUpdate extends Dialog {
                 SizedBox(
                     height: 44.h,
                     child: const VerticalDivider(
-                      color: CommonColors.colorF5F5F5,
+                      color: UiCommonColors.colorF5F5F5,
                     )),
                 Expanded(
                   child: WidgetButton.getBtnOldNormal(
