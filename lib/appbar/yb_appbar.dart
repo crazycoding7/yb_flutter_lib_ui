@@ -17,7 +17,7 @@ class YBAppBar {
   static PreferredSizeWidget getTitleAppBarNormal(
       {String title = '',
       bool isHiddenLeftIcon = false,
-      OnBackClickCallback? onBackClickCallback,
+      UIOnBackClickCallback? onBackClickCallback,
       bool isWhiteTheme = false}) {
     return PreferredSize(
         child: TitleWidget(

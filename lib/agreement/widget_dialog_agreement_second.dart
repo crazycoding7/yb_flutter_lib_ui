@@ -13,7 +13,7 @@ import '../widget_small.dart';
 class WidgetDialogAgreementSecond extends Dialog {
   ///点击背景是否能够退出
   final bool canceledOnTouchOutside;
-  final YbCallback restartDialogCallBack;
+  final UIYbCallback restartDialogCallBack;
 
   const WidgetDialogAgreementSecond(
       {Key? key,

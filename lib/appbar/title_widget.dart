@@ -5,7 +5,7 @@ import '../color/ui_common_color.dart';
 import '../image/common_images.dart';
 import '../text/widget_text.dart';
 
-typedef OnBackClickCallback = void Function();
+typedef UIOnBackClickCallback = void Function();
 
 /// common title
 class TitleWidget extends StatefulWidget {
@@ -16,11 +16,11 @@ class TitleWidget extends StatefulWidget {
   final Color color;
   final bool isBlackBackIcon;
   final bool isHiddenLeftIcon; // 返回图标是否隐藏
-  final OnBackClickCallback? onBackClickCallback;
-  final OnBackClickCallback? onRightClickCallback;
+  final UIOnBackClickCallback? onBackClickCallback;
+  final UIOnBackClickCallback? onRightClickCallback;
   final bool isWhiteTheme;
   final String titleRightSecondIconPath;
-  final OnBackClickCallback? onRightSecondClickCallback;
+  final UIOnBackClickCallback? onRightSecondClickCallback;
 
   const TitleWidget(
       {Key? key,

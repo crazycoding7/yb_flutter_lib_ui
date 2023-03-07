@@ -10,14 +10,14 @@ import '../text/widget_text.dart';
 import '../widget_small.dart';
 import 'agreement_richview.dart';
 
-typedef YbCallback = void Function();
+typedef UIYbCallback = void Function();
 
 /// 隐私协议弹窗(First)
 class WidgetDialogAgreementApp extends Dialog {
   ///点击背景是否能够退出
   final bool canceledOnTouchOutside;
-  final YbCallback rightCallBack;
-  final YbCallback restartDialogCallBack;
+  final UIYbCallback rightCallBack;
+  final UIYbCallback restartDialogCallBack;
 
   final ContractController _controller = ContractController();
 

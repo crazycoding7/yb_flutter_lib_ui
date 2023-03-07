@@ -13,3 +13,12 @@
 ## 0.0.2+3
 
 * add common widgets.
+
+## 0.0.2+4
+
+* remove common_colors file.
+
+
+## 0.0.2+5
+
+* callback rename.

@@ -15,8 +15,8 @@ import 'agreement_richview.dart';
 class WidgetDialogAgreementUpdate extends Dialog {
   ///点击背景是否能够退出
   final bool canceledOnTouchOutside;
-  final YbCallback rightCallBack;
-  final YbCallback restartDialogCallBack;
+  final UIYbCallback rightCallBack;
+  final UIYbCallback restartDialogCallBack;
 
   final ContractController _controller = ContractController();
 
