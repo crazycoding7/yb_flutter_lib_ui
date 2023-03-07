@@ -7,6 +7,7 @@ import 'package:timer_count_down/timer_count_down.dart';
 import '../color/ui_common_color.dart';
 import '../const.dart';
 import '../image/common_images.dart';
+import '../images/widget_image.dart';
 import '../style/common_style.dart';
 import '../text/widget_text.dart';
 
@@ -30,7 +31,8 @@ class CommonListItem {
         children: <Widget>[
           Visibility(
               visible: showRedDot,
-              child: Image.asset(UICommonImages.pageCertifyRequireWarning)),
+              child:
+                  WidgetImage.asset(UICommonImages.pageCertifyRequireWarning)),
           Container(
             width: 60,
             child: Text(
@@ -81,7 +83,7 @@ class CommonListItem {
                   TextStyle(fontSize: 14, color: UiCommonColors.black_333333),
             ),
           ),
-          Image.asset(UICommonImages.commonToRight),
+          WidgetImage.asset(UICommonImages.commonToRight),
         ],
       ),
     );
@@ -213,7 +215,7 @@ class CommonListItem {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Image.asset(UICommonImages.pageCertifyRequireWarning),
+            WidgetImage.asset(UICommonImages.pageCertifyRequireWarning),
             Container(
               width: 60,
               child: Text(
@@ -270,7 +272,7 @@ class CommonListItem {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Image.asset(UICommonImages.pageCertifyRequireWarning),
+          WidgetImage.asset(UICommonImages.pageCertifyRequireWarning),
           Container(
             width: 60,
             child: Text(
@@ -291,10 +293,10 @@ class CommonListItem {
               child: Row(children: [
                 avatar != null && avatar.length > 0
                     ? Image.network(avatar)
-                    : Image.asset(UICommonImages.commonDefaultAvatar),
+                    : WidgetImage.asset(UICommonImages.commonDefaultAvatar),
                 Expanded(child: SizedBox()),
                 SizedBox(width: 4),
-                Image.asset(UICommonImages.commonToRight),
+                WidgetImage.asset(UICommonImages.commonToRight),
                 SizedBox(width: 8)
               ]),
             ),
@@ -321,7 +323,7 @@ class CommonListItem {
         children: <Widget>[
           Visibility(
               visible: showRedDot,
-              child: Image.asset(
+              child: WidgetImage.asset(
                 UICommonImages.pageCertifyRequireWarning,
                 package: packageName,
               )),
@@ -360,7 +362,7 @@ class CommonListItem {
             ),
           ),
           SizedBox(width: 4),
-          Image.asset(UICommonImages.commonToRight),
+          WidgetImage.asset(UICommonImages.commonToRight),
           SizedBox(width: 8)
         ],
       ),
@@ -405,7 +407,7 @@ class CommonListItem {
               ),
             ),
             SizedBox(width: 4.w),
-            Image.asset(UICommonImages.commonToRight),
+            WidgetImage.asset(UICommonImages.commonToRight),
             SizedBox(width: 8.w)
           ],
         ),
@@ -421,7 +423,7 @@ class CommonListItem {
         // mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Image.asset(UICommonImages.pageCertifyRequireWarning),
+          WidgetImage.asset(UICommonImages.pageCertifyRequireWarning),
           Container(
             width: 60,
             child: Text(
@@ -497,7 +499,7 @@ class CommonListItem {
         // mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Image.asset(UICommonImages.pageCertifyRequireWarning),
+          WidgetImage.asset(UICommonImages.pageCertifyRequireWarning),
           Container(
             width: 60,
             child: Text(
@@ -543,7 +545,7 @@ class CommonListItem {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Image.asset(
+          WidgetImage.asset(
             leftIcon,
             package: packageName,
           ),
@@ -556,7 +558,7 @@ class CommonListItem {
                 TextStyle(fontSize: 16.sp, color: UiCommonColors.black_333333),
           ),
           Expanded(child: SizedBox()),
-          Image.asset(
+          WidgetImage.asset(
             rightImagePath,
             package: packageName,
           ),
@@ -592,7 +594,7 @@ class CommonListItem {
             ],
           ),
           Expanded(child: SizedBox()),
-          Image.asset(
+          WidgetImage.asset(
             rightImagePath,
             package: packageName,
           ),

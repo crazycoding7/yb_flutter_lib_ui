@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../images/widget_image.dart';
 import '../text/widget_text.dart';
 
 class WidgetRowColumn {
@@ -52,7 +53,7 @@ class WidgetRowColumn {
         isRightExpand: isRightExpand,
         left1: Padding(
           padding: EdgeInsets.only(left: 12.w, right: 8.w),
-          child: Image.asset(imageStar),
+          child: WidgetImage.asset(imageStar),
         ),
         left2: WidgetText.getTextNormal(
           text: '$name',
@@ -69,7 +70,7 @@ class WidgetRowColumn {
         right2: (numberUnitWidget == null)
             ? Padding(
                 padding: EdgeInsets.only(left: 8.w, right: 12.w),
-                child: Image.asset(imageToRight),
+                child: WidgetImage.asset(imageToRight),
               )
             : numberUnitWidget,
       ),

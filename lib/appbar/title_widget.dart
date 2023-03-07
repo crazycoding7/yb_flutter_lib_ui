@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../color/ui_common_color.dart';
 import '../image/common_images.dart';
+import '../images/widget_image.dart';
 import '../text/widget_text.dart';
 
 typedef UIOnBackClickCallback = void Function();
@@ -58,7 +59,7 @@ class _TitleWidget extends State<TitleWidget> {
           alignment: Alignment.centerLeft,
           height: double.infinity,
           width: 48.w,
-          child: Image.asset(backImagePath),
+          child: WidgetImage.asset(backImagePath),
         ),
         onTap: () {
           FocusScope.of(context).requestFocus(FocusNode());
@@ -82,7 +83,7 @@ class _TitleWidget extends State<TitleWidget> {
         child: Container(
           alignment: Alignment.centerRight,
           child: widget.titleRightIconPath.isNotEmpty
-              ? Image.asset(widget.titleRightIconPath)
+              ? WidgetImage.asset(widget.titleRightIconPath)
               : WidgetText.getTextNormal(
                   text: widget.titleRightTextPath, fontSize: 14.sp),
         ),
@@ -106,7 +107,7 @@ class _TitleWidget extends State<TitleWidget> {
                   widget.onRightSecondClickCallback!();
                 }
               },
-              child: Image.asset(widget.titleRightSecondIconPath),
+              child: WidgetImage.asset(widget.titleRightSecondIconPath),
             ),
             SizedBox(
               width: 12.w,
@@ -136,7 +137,7 @@ class _TitleWidget extends State<TitleWidget> {
             color: widget.isWhiteTheme ? Colors.black : Colors.white),
       );
     } else {
-      return Image.asset(widget.titleIconPath);
+      return WidgetImage.asset(widget.titleIconPath);
     }
   }
 

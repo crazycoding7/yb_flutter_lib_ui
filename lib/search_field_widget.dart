@@ -7,6 +7,7 @@ import '../color/ui_common_color.dart';
 import 'compose_text_edit_controller.dart';
 import 'const.dart';
 import 'image/common_images.dart';
+import 'images/widget_image.dart';
 
 /// 搜索框
 class SearchFieldWidget extends StatefulWidget {
@@ -84,7 +85,7 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
     Widget deleteIcon = InkWell(
       child: Padding(
         padding: EdgeInsets.only(right: 8.w),
-        child: Image.asset(
+        child: WidgetImage.asset(
           UICommonImages.commonEditDelete,
           package: packageName,
         ),
@@ -117,7 +118,7 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
               children: [
                 Padding(
                   padding: EdgeInsets.only(left: 14.w, right: 12.w),
-                  child: Image.asset(
+                  child: WidgetImage.asset(
                     UICommonImages.commonSearchIcon,
                     package: packageName,
                   ),

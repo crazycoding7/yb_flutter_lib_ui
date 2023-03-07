@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../color/ui_common_color.dart';
 import 'image/common_images.dart';
+import 'images/widget_image.dart';
 
 ///图片验证码
 class Captcha extends StatefulWidget {
@@ -72,7 +73,7 @@ class _CaptchaState extends State<Captcha> {
                     onPressed: () {
                       widget.imgCodeController.text = "";
                     },
-                    icon: Image.asset(UICommonImages.pageLoginClear),
+                    icon: WidgetImage.asset(UICommonImages.pageLoginClear),
                   )),
             ),
           ),

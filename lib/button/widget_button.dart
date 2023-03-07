@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../images/widget_image.dart';
 import '../text/widget_text.dart';
 
 class WidgetButton {
@@ -206,7 +207,7 @@ class WidgetButton {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(iconPath),
+            WidgetImage.asset(iconPath),
             SizedBox(width: 12),
             Text(
               text,

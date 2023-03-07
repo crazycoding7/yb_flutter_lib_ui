@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:yb_flutter_lib_ui/text/widget_text.dart';
 import '../color/ui_common_color.dart';
 import 'image/common_images.dart';
+import 'images/widget_image.dart';
 
 class WidgetSmall {
   /// 圆角背景
@@ -102,7 +103,7 @@ class WidgetSmall {
         child: Row(
           mainAxisAlignment: mainAxisAlignment,
           children: [
-            Image.asset(iconPath),
+            WidgetImage.asset(iconPath),
             SizedBox(
               width: 1.5.w,
             ),
@@ -124,7 +125,7 @@ class WidgetSmall {
       Text? text}) {
     late Widget pic;
     if (!RegExpUtil.isUrl(iconPath)) {
-      pic = Image.asset(iconPath);
+      pic = WidgetImage.asset(iconPath);
     } else {
       pic = CachedNetworkImage(
         fit: BoxFit.fill,
@@ -132,7 +133,7 @@ class WidgetSmall {
         width: iconWidth,
         height: iconHeight,
         errorWidget: (context, url, error) =>
-            Image.asset(CommonImages.pageHomeMenuOnlineCounsel),
+            WidgetImage.asset(CommonImages.pageHomeMenuOnlineCounsel),
       );
     }
 
@@ -187,7 +188,7 @@ class WidgetSmall {
                   },
                   child: isHideRedDot
                       ? SizedBox()
-                      : Image.asset(UICommonImages.commonRedDotDelete),
+                      : WidgetImage.asset(UICommonImages.commonRedDotDelete),
                 ),
         )
       ],
@@ -492,7 +493,7 @@ class WidgetSmall {
 
     Widget deleteIcon = Padding(
       padding: EdgeInsets.only(right: 8.w),
-      child: Image.asset(UICommonImages.commonEditDelete),
+      child: WidgetImage.asset(UICommonImages.commonEditDelete),
     );
 
     return Container(
@@ -513,7 +514,7 @@ class WidgetSmall {
               children: [
                 Padding(
                   padding: EdgeInsets.only(left: 14.w, right: 12.w),
-                  child: Image.asset(UICommonImages.commonSearchIcon),
+                  child: WidgetImage.asset(UICommonImages.commonSearchIcon),
                 ),
                 Expanded(
                     child: Container(

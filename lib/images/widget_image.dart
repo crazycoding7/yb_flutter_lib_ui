@@ -4,12 +4,16 @@ import 'package:flutter/material.dart';
 class WidgetImage {
   /// assetImage
   static asset(String name,
-      {double? width, double? height, String package = 'api_repository'}) {
+      {double? width,
+      double? height,
+      BoxFit? fit,
+      String package = 'api_repository'}) {
     return Image.asset(
       name,
       width: width,
       height: height,
       package: package,
+      fit: fit,
     );
   }
 
@@ -25,7 +29,7 @@ class WidgetImage {
       width: width,
       height: height,
       errorWidget: (context, url, error) =>
-          errorPic == '' ? SizedBox() : Image.asset(errorPic),
+          errorPic == '' ? SizedBox() : WidgetImage.asset(errorPic),
     );
   }
 
@@ -53,7 +57,7 @@ class WidgetImage {
         width: width,
         height: height,
         errorWidget: (context, url, error) =>
-            errorPic == '' ? SizedBox() : Image.asset(errorPic),
+            errorPic == '' ? SizedBox() : WidgetImage.asset(errorPic),
       ),
     );
   }

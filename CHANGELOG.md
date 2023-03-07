@@ -41,3 +41,11 @@
 ## 0.0.2+10
 
 * modify AgreementConfig、WidgetDialogAgreementUpdate same name.
+
+## 0.0.2+11
+
+* modify image widget file.
+
+## 0.0.2+12
+
+* modify image widget file again.

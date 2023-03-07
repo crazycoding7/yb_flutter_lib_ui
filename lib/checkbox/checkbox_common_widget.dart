@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../const.dart';
 import '../image/common_images.dart';
+import '../images/widget_image.dart';
 
 typedef OnClickCallback = void Function(bool isSelected);
 
@@ -39,9 +40,10 @@ class _CheckBoxCommonWidget extends State<CheckBoxCommonWidget> {
         });
       },
       child: _isSelected
-          ? Image.asset(UICommonImages.commonCheckboxSelectedIcon,
+          ? WidgetImage.asset(UICommonImages.commonCheckboxSelectedIcon,
               package: packageName)
-          : Image.asset(UICommonImages.commonCheckboxNullIcon, package: packageName),
+          : WidgetImage.asset(UICommonImages.commonCheckboxNullIcon,
+              package: packageName),
     );
   }
 }

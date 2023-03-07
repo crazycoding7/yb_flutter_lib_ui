@@ -5,6 +5,7 @@ import 'package:yb_flutter_lib_ui/appbar/title_widget.dart';
 import '../color/ui_common_color.dart';
 import '../const.dart';
 import '../image/common_images.dart';
+import '../images/widget_image.dart';
 import '../style/common_style.dart';
 
 typedef YbCallbackInt = void Function(int num);
@@ -40,7 +41,7 @@ class YBAppBar {
           onTap: () {
             Navigator.pop(context);
           },
-          child: Image.asset(
+          child: WidgetImage.asset(
             UICommonImages.commonTitleBackIcon,
             package: packageName,
           )),
@@ -75,7 +76,7 @@ class YBAppBar {
       actions: [
         GestureDetector(
             onTap: rightCallback,
-            child: Image.asset(
+            child: WidgetImage.asset(
               rightImagePath,
               package: packageName,
             ))
@@ -105,7 +106,7 @@ class YBAppBar {
                 Radius.circular(8.0),
               ),
             ),
-            icon: Image.asset(
+            icon: WidgetImage.asset(
               rightImagePath,
               package: packageName,
             ),
