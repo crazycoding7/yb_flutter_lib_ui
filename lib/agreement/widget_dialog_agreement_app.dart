@@ -19,7 +19,7 @@ class WidgetDialogAgreementApp extends Dialog {
   final UIYbCallback rightCallBack;
   final UIYbCallback restartDialogCallBack;
 
-  final ContractController _controller = ContractController();
+  final UIContractController _controller = UIContractController();
 
   WidgetDialogAgreementApp(
       {Key? key,
@@ -95,7 +95,7 @@ class WidgetDialogAgreementApp extends Dialog {
                                 ..onTap = () {
                                   SmartDialog.dismiss();
                                   _controller
-                                      .getData(AgreementConfig.doctor_user);
+                                      .getData(UIAgreementConfig.doctor_user);
                                 }),
                           const TextSpan(text: '及'),
                           TextSpan(
@@ -105,8 +105,8 @@ class WidgetDialogAgreementApp extends Dialog {
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
                                   SmartDialog.dismiss();
-                                  _controller
-                                      .getData(AgreementConfig.doctor_privacy);
+                                  _controller.getData(
+                                      UIAgreementConfig.doctor_privacy);
                                 }),
                           const TextSpan(text: ',并郑重做出授权与否的决定。\n'),
                           const TextSpan(

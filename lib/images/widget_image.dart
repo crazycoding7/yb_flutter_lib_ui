@@ -2,6 +2,17 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class WidgetImage {
+  /// assetImage
+  static asset(String name,
+      {double? width, double? height, String package = 'api_repository'}) {
+    return Image.asset(
+      name,
+      width: width,
+      height: height,
+      package: package,
+    );
+  }
+
   static getImage(
       {required String url,
       required double width,

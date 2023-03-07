@@ -12,15 +12,15 @@ import '../widget_small.dart';
 import 'agreement_richview.dart';
 
 /// 隐私协议弹窗(First)
-class WidgetDialogAgreementUpdate extends Dialog {
+class UIWidgetDialogAgreementUpdate extends Dialog {
   ///点击背景是否能够退出
   final bool canceledOnTouchOutside;
   final UIYbCallback rightCallBack;
   final UIYbCallback restartDialogCallBack;
 
-  final ContractController _controller = ContractController();
+  final UIContractController _controller = UIContractController();
 
-  WidgetDialogAgreementUpdate(
+  UIWidgetDialogAgreementUpdate(
       {Key? key,
       required this.canceledOnTouchOutside,
       required this.rightCallBack,
@@ -89,8 +89,8 @@ class WidgetDialogAgreementUpdate extends Dialog {
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
                                   SmartDialog.dismiss();
-                                  _controller
-                                      .getData(AgreementConfig.doctor_privacy);
+                                  _controller.getData(
+                                      UIAgreementConfig.doctor_privacy);
                                 }),
                           const TextSpan(text: '已更新,您必须阅读并接受新的条款与条件，才能继续进行。\n'),
                         ]),

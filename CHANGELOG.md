@@ -29,3 +29,15 @@
 ## 0.0.2+7
 
 * remove common_images file.
+
+## 0.0.2+8
+
+* modify image widget file.
+
+## 0.0.2+9
+
+* modify ContractController same name.
+
+## 0.0.2+10
+
+* modify AgreementConfig、WidgetDialogAgreementUpdate same name.

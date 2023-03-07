@@ -15,7 +15,7 @@ class AgreementRichView extends StatelessWidget {
     required this.onClickCallback,
   }) : super(key: key);
 
-  final ContractController _controller = ContractController();
+  final UIContractController _controller = UIContractController();
 
   @override
   Widget build(BuildContext context) {
@@ -37,14 +37,14 @@ class AgreementRichView extends StatelessWidget {
                     style: const TextStyle(color: UiCommonColors.appMain),
                     recognizer: TapGestureRecognizer()
                       ..onTap = () {
-                        _controller.getData(AgreementConfig.doctor_user);
+                        _controller.getData(UIAgreementConfig.doctor_user);
                       }),
                 TextSpan(
                     text: "《隐私政策》",
                     style: const TextStyle(color: UiCommonColors.appMain),
                     recognizer: TapGestureRecognizer()
                       ..onTap = () {
-                        _controller.getData(AgreementConfig.doctor_privacy);
+                        _controller.getData(UIAgreementConfig.doctor_privacy);
                       }),
               ]),
         ),
@@ -53,7 +53,7 @@ class AgreementRichView extends StatelessWidget {
   }
 }
 
-class AgreementConfig {
+class UIAgreementConfig {
   static int doctor_user = 400001; //用户协议
   static int doctor_privacy = 400002; //隐私协议
   static int doctor_financial_account = 400003; //金融账户信息获取授权书
@@ -61,7 +61,7 @@ class AgreementConfig {
   static int doctor_task_rule = 400005; //任务规则
 }
 
-class ContractController extends GetxController {
+class UIContractController extends GetxController {
   var title = ''.obs;
   var content = ''.obs;
 
