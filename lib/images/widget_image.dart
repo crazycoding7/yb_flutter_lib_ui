@@ -17,6 +17,14 @@ class WidgetImage {
     );
   }
 
+  /// assetImage
+  static assetImage(String name, {String package = 'api_repository'}) {
+    return AssetImage(
+      name,
+      package: package,
+    );
+  }
+
   static getImage(
       {required String url,
       required double width,

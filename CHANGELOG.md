@@ -49,3 +49,7 @@
 ## 0.0.2+12
 
 * modify image widget file again.
+
+## 0.0.2+13
+
+* modify image widget file.

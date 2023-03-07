@@ -1,6 +1,6 @@
 name: yb_flutter_lib_ui
 description: flutter quick ui lib, like button、text、image、redCount、bg_decoration...
-version: 0.0.2+12
+version: 0.0.2+13
 homepage: https://github.com/crazycoding7/flutter_lib_ui
 
 environment:
