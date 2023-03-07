@@ -85,7 +85,7 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
       child: Padding(
         padding: EdgeInsets.only(right: 8.w),
         child: Image.asset(
-          CommonImages.commonEditDelete,
+          UICommonImages.commonEditDelete,
           package: packageName,
         ),
       ),
@@ -118,7 +118,7 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
                 Padding(
                   padding: EdgeInsets.only(left: 14.w, right: 12.w),
                   child: Image.asset(
-                    CommonImages.commonSearchIcon,
+                    UICommonImages.commonSearchIcon,
                     package: packageName,
                   ),
                 ),

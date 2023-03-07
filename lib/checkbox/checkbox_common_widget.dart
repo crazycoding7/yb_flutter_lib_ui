@@ -39,9 +39,9 @@ class _CheckBoxCommonWidget extends State<CheckBoxCommonWidget> {
         });
       },
       child: _isSelected
-          ? Image.asset(CommonImages.commonCheckboxSelectedIcon,
+          ? Image.asset(UICommonImages.commonCheckboxSelectedIcon,
               package: packageName)
-          : Image.asset(CommonImages.commonCheckboxNullIcon, package: packageName),
+          : Image.asset(UICommonImages.commonCheckboxNullIcon, package: packageName),
     );
   }
 }

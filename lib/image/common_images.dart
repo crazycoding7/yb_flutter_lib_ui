@@ -1,4 +1,4 @@
-class CommonImages {
+class UICommonImages {
   static const String commonTitleBackIcon = 'images/common_title_back_icon.png';
   static const String commonTitleBackBlackIcon =
       'images/common_title_back_black_icon.png';

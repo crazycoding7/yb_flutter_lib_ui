@@ -41,7 +41,7 @@ class YBAppBar {
             Navigator.pop(context);
           },
           child: Image.asset(
-            CommonImages.commonTitleBackIcon,
+            UICommonImages.commonTitleBackIcon,
             package: packageName,
           )),
       actions: [
@@ -69,7 +69,7 @@ class YBAppBar {
   static titleAppbarWithRightImage(
       {required String title,
       required BuildContext context,
-      String rightImagePath = CommonImages.bankCardAdd,
+      String rightImagePath = UICommonImages.bankCardAdd,
       VoidCallback? rightCallback}) {
     return AppBar(
       actions: [
@@ -93,7 +93,7 @@ class YBAppBar {
   static titleAppbarWithRightImageAndPop(
       {required String title,
       required BuildContext context,
-      String rightImagePath = CommonImages.bankCardAdd,
+      String rightImagePath = UICommonImages.bankCardAdd,
       YbCallbackInt? rightListCallBack,
       VoidCallback? rightCallback}) {
     return AppBar(

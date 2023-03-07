@@ -30,7 +30,7 @@ class CommonListItem {
         children: <Widget>[
           Visibility(
               visible: showRedDot,
-              child: Image.asset(CommonImages.pageCertifyRequireWarning)),
+              child: Image.asset(UICommonImages.pageCertifyRequireWarning)),
           Container(
             width: 60,
             child: Text(
@@ -81,7 +81,7 @@ class CommonListItem {
                   TextStyle(fontSize: 14, color: UiCommonColors.black_333333),
             ),
           ),
-          Image.asset(CommonImages.commonToRight),
+          Image.asset(UICommonImages.commonToRight),
         ],
       ),
     );
@@ -213,7 +213,7 @@ class CommonListItem {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Image.asset(CommonImages.pageCertifyRequireWarning),
+            Image.asset(UICommonImages.pageCertifyRequireWarning),
             Container(
               width: 60,
               child: Text(
@@ -270,7 +270,7 @@ class CommonListItem {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Image.asset(CommonImages.pageCertifyRequireWarning),
+          Image.asset(UICommonImages.pageCertifyRequireWarning),
           Container(
             width: 60,
             child: Text(
@@ -291,10 +291,10 @@ class CommonListItem {
               child: Row(children: [
                 avatar != null && avatar.length > 0
                     ? Image.network(avatar)
-                    : Image.asset(CommonImages.commonDefaultAvatar),
+                    : Image.asset(UICommonImages.commonDefaultAvatar),
                 Expanded(child: SizedBox()),
                 SizedBox(width: 4),
-                Image.asset(CommonImages.commonToRight),
+                Image.asset(UICommonImages.commonToRight),
                 SizedBox(width: 8)
               ]),
             ),
@@ -322,7 +322,7 @@ class CommonListItem {
           Visibility(
               visible: showRedDot,
               child: Image.asset(
-                CommonImages.pageCertifyRequireWarning,
+                UICommonImages.pageCertifyRequireWarning,
                 package: packageName,
               )),
           Visibility(
@@ -360,7 +360,7 @@ class CommonListItem {
             ),
           ),
           SizedBox(width: 4),
-          Image.asset(CommonImages.commonToRight),
+          Image.asset(UICommonImages.commonToRight),
           SizedBox(width: 8)
         ],
       ),
@@ -405,7 +405,7 @@ class CommonListItem {
               ),
             ),
             SizedBox(width: 4.w),
-            Image.asset(CommonImages.commonToRight),
+            Image.asset(UICommonImages.commonToRight),
             SizedBox(width: 8.w)
           ],
         ),
@@ -421,7 +421,7 @@ class CommonListItem {
         // mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Image.asset(CommonImages.pageCertifyRequireWarning),
+          Image.asset(UICommonImages.pageCertifyRequireWarning),
           Container(
             width: 60,
             child: Text(
@@ -497,7 +497,7 @@ class CommonListItem {
         // mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Image.asset(CommonImages.pageCertifyRequireWarning),
+          Image.asset(UICommonImages.pageCertifyRequireWarning),
           Container(
             width: 60,
             child: Text(
@@ -536,7 +536,7 @@ class CommonListItem {
   static Widget listItemWithIcon(
       {required String leftIcon,
       required String title,
-      String rightImagePath = CommonImages.commonToRight}) {
+      String rightImagePath = UICommonImages.commonToRight}) {
     return Container(
       color: Colors.white,
       padding: EdgeInsets.fromLTRB(12, 12, 12, 12),
@@ -568,7 +568,7 @@ class CommonListItem {
   static Widget listItemWithSubTitleInBottom(
       {required String title,
       String subTitle = '',
-      String rightImagePath = CommonImages.commonToRight}) {
+      String rightImagePath = UICommonImages.commonToRight}) {
     return Container(
       // padding: EdgeInsets.fromLTRB(16, 12, 12, 12),
       color: Colors.white,

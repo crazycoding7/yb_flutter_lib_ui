@@ -18,7 +18,14 @@
 
 * remove common_colors file.
 
-
 ## 0.0.2+5
 
 * callback rename.
+
+## 0.0.2+6
+
+* remove common_strings file.
+
+## 0.0.2+7
+
+* remove common_images file.

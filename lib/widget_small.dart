@@ -187,7 +187,7 @@ class WidgetSmall {
                   },
                   child: isHideRedDot
                       ? SizedBox()
-                      : Image.asset(CommonImages.commonRedDotDelete),
+                      : Image.asset(UICommonImages.commonRedDotDelete),
                 ),
         )
       ],
@@ -492,7 +492,7 @@ class WidgetSmall {
 
     Widget deleteIcon = Padding(
       padding: EdgeInsets.only(right: 8.w),
-      child: Image.asset(CommonImages.commonEditDelete),
+      child: Image.asset(UICommonImages.commonEditDelete),
     );
 
     return Container(
@@ -513,7 +513,7 @@ class WidgetSmall {
               children: [
                 Padding(
                   padding: EdgeInsets.only(left: 14.w, right: 12.w),
-                  child: Image.asset(CommonImages.commonSearchIcon),
+                  child: Image.asset(UICommonImages.commonSearchIcon),
                 ),
                 Expanded(
                     child: Container(

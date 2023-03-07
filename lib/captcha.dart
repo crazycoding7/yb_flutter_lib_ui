@@ -72,7 +72,7 @@ class _CaptchaState extends State<Captcha> {
                     onPressed: () {
                       widget.imgCodeController.text = "";
                     },
-                    icon: Image.asset(CommonImages.pageLoginClear),
+                    icon: Image.asset(UICommonImages.pageLoginClear),
                   )),
             ),
           ),

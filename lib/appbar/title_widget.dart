@@ -48,8 +48,8 @@ class _TitleWidget extends State<TitleWidget> {
     // 存放左中右三个组件
     List<Widget> resultList = <Widget>[];
     String backImagePath = widget.isWhiteTheme
-        ? CommonImages.commonTitleBackBlackIcon
-        : CommonImages.commonTitleBackIcon;
+        ? UICommonImages.commonTitleBackBlackIcon
+        : UICommonImages.commonTitleBackIcon;
 
     if (!widget.isHiddenLeftIcon) {
       Widget backWidget = GestureDetector(
