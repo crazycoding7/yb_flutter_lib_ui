@@ -35,11 +35,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_screenutil: 5.5.2
-
-
   yb_flutter_lib_ui:
-    git:
-      url: https://github.com/crazycoding7/yb_flutter_lib_ui.git
+    path: ../
 
 
 dev_dependencies:

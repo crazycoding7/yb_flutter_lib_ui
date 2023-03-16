@@ -52,8 +52,16 @@
 
 ## 0.0.2+13
 
-* modify image widget file.
+* modify image widget file1.
 
-* ## 0.0.2+14
+## 0.0.2+14
 
-* modify image widget file.
+* modify image widget file2.
+
+## 0.0.2+15
+
+* modify image widget file3.
+
+## 0.0.2+16
+
+* modify image widget file4.
