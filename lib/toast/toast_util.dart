@@ -16,7 +16,7 @@ class ToastUtil {
     String message, {
     alignment = Alignment.center,
     backgroundColor = Colors.white,
-    textColor = UiCommonColors.black_333333,
+    textColor = UICommonColors.black_333333,
   }) {
     Fluttertoast.showToast(
         msg: message,

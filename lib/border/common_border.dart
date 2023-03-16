@@ -7,7 +7,7 @@ class CommonBorder {
   static OutlineInputBorder outLineBorder() {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(4.r),
-      borderSide: BorderSide(width: 0.5.w, color: UiCommonColors.grey_e5e5e5),
+      borderSide: BorderSide(width: 0.5.w, color: UICommonColors.grey_e5e5e5),
     );
   }
 }

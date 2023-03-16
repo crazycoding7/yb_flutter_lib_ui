@@ -28,7 +28,7 @@ class WidgetDialog {
     Color color;
     for (int i = 0; i < data.length; i++) {
       if (i == 0) {
-        color = UiCommonColors.color_999999;
+        color = UICommonColors.color_999999;
         list.add(Container(
           decoration: WidgetSmall.bgRadiusTop(
               color: Colors.white, bottomLeft: 18, bottomRight: 18),
@@ -43,9 +43,9 @@ class WidgetDialog {
         ));
         continue;
       } else if (data[i] == selected) {
-        color = UiCommonColors.color_1AB370;
+        color = UICommonColors.color_1AB370;
       } else {
-        color = UiCommonColors.color_323232;
+        color = UICommonColors.color_323232;
       }
 
       list.add(InkWell(
@@ -116,7 +116,7 @@ class WidgetDialog {
                   child: Center(
                     child: WidgetText.getTextNormal(
                       text: title,
-                      color: UiCommonColors.color_333333,
+                      color: UICommonColors.color_333333,
                       fontSize: 16.sp,
                       fontWeight: FontWeight.bold,
                     ),
@@ -137,14 +137,14 @@ class WidgetDialog {
                             ))
                           : WidgetText.getTextNormal(
                               text: message ?? '',
-                              color: UiCommonColors.color_333333,
+                              color: UICommonColors.color_333333,
                               fontSize: 14.sp,
                             ),
                     ),
                   ),
                 ),
                 const Divider(
-                  color: UiCommonColors.colorF5F5F5,
+                  color: UICommonColors.colorF5F5F5,
                   height: 1,
                 ),
                 SizedBox(
@@ -160,7 +160,7 @@ class WidgetDialog {
                             alignment: Alignment.center,
                             child: WidgetText.getTextNormal(
                               text: okText,
-                              color: UiCommonColors.color_1AB370,
+                              color: UICommonColors.color_1AB370,
                               fontSize: 16.sp,
                             ),
                           ),
@@ -201,7 +201,7 @@ class WidgetDialog {
                       children: [
                         WidgetText.getTextNormal(
                           text: title,
-                          color: UiCommonColors.color_333333,
+                          color: UICommonColors.color_333333,
                           fontSize: 16.sp,
                           fontWeight: FontWeight.bold,
                         ),
@@ -214,7 +214,7 @@ class WidgetDialog {
                             ? SizedBox()
                             : WidgetText.getTextNormal(
                                 text: desc ?? '',
-                                color: UiCommonColors.color_999999,
+                                color: UICommonColors.color_999999,
                                 fontSize: 14.sp,
                               ),
                       ],
@@ -222,7 +222,7 @@ class WidgetDialog {
                   ),
                 ),
                 const Divider(
-                  color: UiCommonColors.colorF5F5F5,
+                  color: UICommonColors.colorF5F5F5,
                   height: 1,
                 ),
                 SizedBox(
@@ -238,7 +238,7 @@ class WidgetDialog {
                             alignment: Alignment.center,
                             child: WidgetText.getTextNormal(
                               text: leftText,
-                              color: UiCommonColors.color_999999,
+                              color: UICommonColors.color_999999,
                               fontSize: 14.sp,
                             ),
                           ),
@@ -247,7 +247,7 @@ class WidgetDialog {
                       SizedBox(
                           height: 44.h,
                           child: const VerticalDivider(
-                            color: UiCommonColors.colorF5F5F5,
+                            color: UICommonColors.colorF5F5F5,
                           )),
                       Expanded(
                         child: InkWell(
@@ -258,7 +258,7 @@ class WidgetDialog {
                             alignment: Alignment.center,
                             child: WidgetText.getTextNormal(
                               text: rightText,
-                              color: UiCommonColors.color_1AB370,
+                              color: UICommonColors.color_1AB370,
                               fontSize: 16.sp,
                             ),
                           ),

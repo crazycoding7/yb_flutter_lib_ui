@@ -30,18 +30,18 @@ class AgreementRichView extends StatelessWidget {
           text: TextSpan(
               text: "我已阅读并同意",
               style: TextStyle(
-                  color: UiCommonColors.black_333333, fontSize: 12.sp),
+                  color: UICommonColors.black_333333, fontSize: 12.sp),
               children: [
                 TextSpan(
                     text: "《用户协议》",
-                    style: const TextStyle(color: UiCommonColors.appMain),
+                    style: const TextStyle(color: UICommonColors.appMain),
                     recognizer: TapGestureRecognizer()
                       ..onTap = () {
                         _controller.getData(UIAgreementConfig.doctor_user);
                       }),
                 TextSpan(
                     text: "《隐私政策》",
-                    style: const TextStyle(color: UiCommonColors.appMain),
+                    style: const TextStyle(color: UICommonColors.appMain),
                     recognizer: TapGestureRecognizer()
                       ..onTap = () {
                         _controller.getData(UIAgreementConfig.doctor_privacy);

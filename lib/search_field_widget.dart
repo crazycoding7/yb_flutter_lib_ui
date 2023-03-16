@@ -74,10 +74,10 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
           hintText: widget.hintText,
           contentPadding: EdgeInsets.only(bottom: 11),
           hintStyle:
-              TextStyle(color: UiCommonColors.color_999999, fontSize: 14.w),
+              TextStyle(color: UICommonColors.color_999999, fontSize: 14.w),
           border: InputBorder.none),
       style: TextStyle(
-        color: UiCommonColors.color_333333,
+        color: UICommonColors.color_333333,
         fontSize: 14.sp,
       ),
     );
@@ -112,7 +112,7 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
             height: 36.w,
             decoration: WidgetSmall.bgRadius(
                 color:
-                    widget.isWithe ? Colors.white : UiCommonColors.colorF5F5F5,
+                    widget.isWithe ? Colors.white : UICommonColors.colorF5F5F5,
                 radius: 22),
             child: Row(
               children: [
@@ -147,7 +147,7 @@ class _SearchFieldWidgetState extends State<SearchFieldWidget> {
                   },
                   child: WidgetText.getTextNormal(
                     text: '搜索',
-                    color: UiCommonColors.color_1AB370,
+                    color: UICommonColors.color_1AB370,
                     fontSize: 14.sp,
                     fontWeight: FontWeight.bold,
                   ),

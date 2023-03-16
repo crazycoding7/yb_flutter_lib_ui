@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_switch/flutter_switch.dart';
 import 'package:timer_count_down/timer_controller.dart';
 import 'package:timer_count_down/timer_count_down.dart';
 
@@ -16,6 +17,46 @@ typedef DoubleCallback = void Function(double);
 
 class CommonListItem {
   static double defaultPadding = 14;
+
+  static Widget listItemWithSwitch(
+      {String text = '开关',
+        String hint = '',
+        bool switchStatus = false,
+        required ValueChanged<bool> onToggle}) {
+    return Container(
+      height: 48,
+      padding: EdgeInsets.fromLTRB(16.w, 12, 16.w, 12),
+      decoration: BoxDecoration(
+        // borderRadius: BorderRadius.circular(8),
+        color: Colors.white,
+      ),
+      child: Row(
+        children: [
+          Text(
+            text,
+            style: TextStyle(color: UICommonColors.black_333333),
+          ),
+          Expanded(child: SizedBox()),
+          Text(
+            hint,
+            style: TextStyle(color: UICommonColors.grey_999999),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          FlutterSwitch(
+            width: 48,
+            height: 24,
+            activeColor: UICommonColors.appMain,
+            inactiveColor: UICommonColors.grey_e5e5e5,
+            value: switchStatus,
+            padding: 0.5,
+            onToggle: onToggle,
+          ),
+        ],
+      ),
+    );
+  }
 
   static Widget simpleListItem({
     String text = '',
@@ -39,7 +80,7 @@ class CommonListItem {
               text,
               style: TextStyle(
                 fontSize: 14,
-                color: UiCommonColors.black_333333,
+                color: UICommonColors.black_333333,
               ),
             ),
           ),
@@ -50,7 +91,7 @@ class CommonListItem {
             child: Text(
               hint,
               style:
-                  TextStyle(fontSize: 14, color: UiCommonColors.black_333333),
+                  TextStyle(fontSize: 14, color: UICommonColors.black_333333),
             ),
           )
         ],
@@ -70,7 +111,7 @@ class CommonListItem {
             text,
             style: TextStyle(
               fontSize: 14,
-              color: UiCommonColors.black_333333,
+              color: UICommonColors.black_333333,
             ),
           ),
           SizedBox(
@@ -80,7 +121,7 @@ class CommonListItem {
             child: Text(
               hint,
               style:
-                  TextStyle(fontSize: 14, color: UiCommonColors.black_333333),
+                  TextStyle(fontSize: 14, color: UICommonColors.black_333333),
             ),
           ),
           WidgetImage.asset(UICommonImages.commonToRight),
@@ -138,8 +179,8 @@ class CommonListItem {
           return WidgetText.getTextNormal(
             text: ' ${down == 0 || down == 60 ? '获取验证码' : '已发送(${down})'}',
             color: down == 0 || down == 60
-                ? UiCommonColors.orange_ff8200
-                : UiCommonColors.orange_ff8200.withOpacity(0.5),
+                ? UICommonColors.orange_ff8200
+                : UICommonColors.orange_ff8200.withOpacity(0.5),
             fontSize: 14.sp,
           );
         },
@@ -163,27 +204,27 @@ class CommonListItem {
           Expanded(
             child: TextField(
               style:
-                  TextStyle(fontSize: 18, color: UiCommonColors.black_333333),
+                  TextStyle(fontSize: 18, color: UICommonColors.black_333333),
               controller: controller,
               keyboardAppearance: Brightness.light,
-              cursorColor: UiCommonColors.appMain,
+              cursorColor: UICommonColors.appMain,
               decoration: InputDecoration(
                 hintText: hint,
                 hintStyle: TextStyle(
-                    color: UiCommonColors.color_999999, fontSize: 14.sp),
-                focusColor: UiCommonColors.appMain,
-                hoverColor: UiCommonColors.appMain,
+                    color: UICommonColors.color_999999, fontSize: 14.sp),
+                focusColor: UICommonColors.appMain,
+                hoverColor: UICommonColors.appMain,
                 border: UnderlineInputBorder(
                   //选中时下边框颜色
                   borderSide: BorderSide(color: Colors.red),
                 ),
                 enabledBorder: UnderlineInputBorder(
                   //选中时下边框颜色
-                  borderSide: BorderSide(color: UiCommonColors.grey_f5f5f5),
+                  borderSide: BorderSide(color: UICommonColors.grey_f5f5f5),
                 ),
                 focusedBorder: UnderlineInputBorder(
                   //选中时下边框颜色
-                  borderSide: BorderSide(color: UiCommonColors.appMain),
+                  borderSide: BorderSide(color: UICommonColors.appMain),
                 ),
               ),
               textAlign: TextAlign.start,
@@ -222,7 +263,7 @@ class CommonListItem {
                 text,
                 style: TextStyle(
                   fontSize: 14,
-                  color: UiCommonColors.black_333333,
+                  color: UICommonColors.black_333333,
                 ),
               ),
             ),
@@ -232,7 +273,7 @@ class CommonListItem {
             Expanded(
               child: TextField(
                 style:
-                    TextStyle(fontSize: 14, color: UiCommonColors.black_333333),
+                    TextStyle(fontSize: 14, color: UICommonColors.black_333333),
                 controller: controller,
                 keyboardAppearance: Brightness.light,
                 scrollPadding: EdgeInsets.zero,
@@ -242,7 +283,7 @@ class CommonListItem {
                     hintText: hint,
                     hintStyle: TextStyle(
                       fontSize: 14,
-                      color: UiCommonColors.grey_999999,
+                      color: UICommonColors.grey_999999,
                     ),
                     border: InputBorder.none),
                 textAlign: TextAlign.start,
@@ -279,7 +320,7 @@ class CommonListItem {
               text,
               style: TextStyle(
                 fontSize: 14,
-                color: UiCommonColors.black_333333,
+                color: UICommonColors.black_333333,
               ),
             ),
           ),
@@ -338,7 +379,7 @@ class CommonListItem {
               text,
               style: TextStyle(
                 fontSize: 14,
-                color: UiCommonColors.black_333333,
+                color: UICommonColors.black_333333,
               ),
             ),
           ),
@@ -355,8 +396,8 @@ class CommonListItem {
                   color: hint.contains('请输入') ||
                           hint.contains('请选择') ||
                           hint.contains('点击')
-                      ? UiCommonColors.grey_999999
-                      : UiCommonColors.black_333333,
+                      ? UICommonColors.grey_999999
+                      : UICommonColors.black_333333,
                 ),
               ),
             ),
@@ -372,7 +413,7 @@ class CommonListItem {
   static Widget listItemWithTitleAndSub(
       {String text = '',
       String hint = '',
-      Color hintColor = UiCommonColors.black_333333,
+      Color hintColor = UICommonColors.black_333333,
       VoidCallback? onTap}) {
     return GestureDetector(
       onTap: onTap,
@@ -390,7 +431,7 @@ class CommonListItem {
                 text,
                 style: TextStyle(
                   fontSize: 14.sp,
-                  color: UiCommonColors.black_333333,
+                  color: UICommonColors.black_333333,
                 ),
               ),
             ),
@@ -430,7 +471,7 @@ class CommonListItem {
               '性别',
               style: TextStyle(
                 fontSize: 14,
-                color: UiCommonColors.black_333333,
+                color: UICommonColors.black_333333,
               ),
             ),
           ),
@@ -443,7 +484,7 @@ class CommonListItem {
               children: [
                 Theme(
                   data: ThemeData(
-                    unselectedWidgetColor: UiCommonColors.grey_eeeeee,
+                    unselectedWidgetColor: UICommonColors.grey_eeeeee,
                   ),
                   child: Radio(
                     materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
@@ -451,7 +492,7 @@ class CommonListItem {
                       horizontal: VisualDensity.minimumDensity,
                       vertical: VisualDensity.minimumDensity,
                     ),
-                    activeColor: UiCommonColors.appMain,
+                    activeColor: UICommonColors.appMain,
                     value: 1,
                     groupValue: groupValue,
                     onChanged: (value) {},
@@ -462,7 +503,7 @@ class CommonListItem {
                 SizedBox(width: 45),
                 Theme(
                   data: ThemeData(
-                    unselectedWidgetColor: UiCommonColors.grey_eeeeee,
+                    unselectedWidgetColor: UICommonColors.grey_eeeeee,
                   ),
                   child: Radio(
                     materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
@@ -470,7 +511,7 @@ class CommonListItem {
                       horizontal: VisualDensity.minimumDensity,
                       vertical: VisualDensity.minimumDensity,
                     ),
-                    activeColor: UiCommonColors.appMain,
+                    activeColor: UICommonColors.appMain,
                     value: 2,
                     groupValue: groupValue,
                     onChanged: (value) {},
@@ -506,7 +547,7 @@ class CommonListItem {
               '职业类型',
               style: TextStyle(
                 fontSize: 14,
-                color: UiCommonColors.black_333333,
+                color: UICommonColors.black_333333,
               ),
             ),
           ),
@@ -519,12 +560,12 @@ class CommonListItem {
               children: [
                 Checkbox(
                     value: first,
-                    activeColor: UiCommonColors.appMain,
+                    activeColor: UICommonColors.appMain,
                     onChanged: firstCallBack),
                 Text('中医专业'),
                 Checkbox(
                     value: second,
-                    activeColor: UiCommonColors.appMain,
+                    activeColor: UICommonColors.appMain,
                     onChanged: secondCallBack),
                 Text('中西医结合专业')
               ],
@@ -555,7 +596,7 @@ class CommonListItem {
           Text(
             title,
             style:
-                TextStyle(fontSize: 16.sp, color: UiCommonColors.black_333333),
+                TextStyle(fontSize: 16.sp, color: UICommonColors.black_333333),
           ),
           Expanded(child: SizedBox()),
           WidgetImage.asset(
@@ -583,13 +624,13 @@ class CommonListItem {
               Text(
                 title,
                 style: TextStyle(
-                    fontSize: 16.sp, color: UiCommonColors.black_333333),
+                    fontSize: 16.sp, color: UICommonColors.black_333333),
               ),
               SizedBox(height: 4),
               Text(
                 subTitle,
                 style: TextStyle(
-                    fontSize: 12.sp, color: UiCommonColors.grey_999999),
+                    fontSize: 12.sp, color: UICommonColors.grey_999999),
               ),
             ],
           ),

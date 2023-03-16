@@ -43,7 +43,7 @@ class _CaptchaState extends State<Captcha> {
             height: 44,
             child: TextField(
               style: TextStyle(
-                  color: UiCommonColors.color_333333, fontSize: 18.sp),
+                  color: UICommonColors.color_333333, fontSize: 18.sp),
               cursorColor: Colors.grey,
               keyboardType: TextInputType.number,
               keyboardAppearance: Brightness.light,
@@ -54,7 +54,7 @@ class _CaptchaState extends State<Captcha> {
               decoration: InputDecoration(
                   hintText: "请输入图形验证码",
                   hintStyle: TextStyle(
-                      color: UiCommonColors.color_999999, fontSize: 14.sp),
+                      color: UICommonColors.color_999999, fontSize: 14.sp),
                   focusColor: Colors.grey,
                   hoverColor: Colors.grey,
                   border: UnderlineInputBorder(
@@ -63,11 +63,11 @@ class _CaptchaState extends State<Captcha> {
                   ),
                   enabledBorder: UnderlineInputBorder(
                     //选中时下边框颜色
-                    borderSide: BorderSide(color: UiCommonColors.grey_f5f5f5),
+                    borderSide: BorderSide(color: UICommonColors.grey_f5f5f5),
                   ),
                   focusedBorder: UnderlineInputBorder(
                     //选中时下边框颜色
-                    borderSide: BorderSide(color: UiCommonColors.appMain),
+                    borderSide: BorderSide(color: UICommonColors.appMain),
                   ),
                   suffixIcon: IconButton(
                     onPressed: () {

@@ -29,7 +29,7 @@ class TitleWidget extends StatefulWidget {
       this.title = "",
       this.titleIconPath = "",
       this.titleRightIconPath = "",
-      this.color = UiCommonColors.color_1AB370,
+      this.color = UICommonColors.color_1AB370,
       this.isBlackBackIcon = false,
       this.isHiddenLeftIcon = false,
       this.onBackClickCallback,

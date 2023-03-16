@@ -21,7 +21,7 @@ class CommonButton {
           height: 44.h,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-              color: UiCommonColors.appMain,
+              color: UICommonColors.appMain,
               borderRadius: BorderRadius.circular(22)),
           child: Text(
             title,
@@ -43,12 +43,12 @@ class CommonButton {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(22.0.r),
           ),
-          side: BorderSide(width: 1.w, color: UiCommonColors.red_ff4d4f),
+          side: BorderSide(width: 1.w, color: UICommonColors.red_ff4d4f),
         ),
         onPressed: onTap,
         child: Text(
           title,
-          style: TextStyle(color: UiCommonColors.red_ff4d4f),
+          style: TextStyle(color: UICommonColors.red_ff4d4f),
         ),
       ),
     );
@@ -64,7 +64,7 @@ class CommonButton {
       child: Container(
           height: height,
           decoration: CommonDecoration.containerDecoration(
-              color: UiCommonColors.appMain, radius: height / 2),
+              color: UICommonColors.appMain, radius: height / 2),
           alignment: Alignment.center,
           child: Text(text!,
               style: CommonTextStyle.commonStyle(

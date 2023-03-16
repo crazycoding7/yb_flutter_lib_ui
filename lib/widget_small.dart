@@ -26,7 +26,7 @@ class WidgetSmall {
   /// 圆形背景(带边框)
   static bgRadiusCircleWithBorder(
           {Color color = Colors.transparent,
-          borderColor = UiCommonColors.colorE5E5E5,
+          borderColor = UICommonColors.colorE5E5E5,
           double radius = 0,
           double width = 1.0}) =>
       BoxDecoration(
@@ -369,20 +369,20 @@ class WidgetSmall {
         children: [
           _layoutFourStatContent(
               stat: stat1,
-              statColor: UiCommonColors.color_1AB370,
-              bgColor: UiCommonColors.color_051AB270,
+              statColor: UICommonColors.color_1AB370,
+              bgColor: UICommonColors.color_051AB270,
               name: name1),
           const Expanded(child: SizedBox()),
           _layoutFourStatContent(
               stat: stat2,
-              statColor: UiCommonColors.colorFF8200,
-              bgColor: UiCommonColors.color_0CFF8200,
+              statColor: UICommonColors.colorFF8200,
+              bgColor: UICommonColors.color_0CFF8200,
               name: name2),
           const Expanded(child: SizedBox()),
           _layoutFourStatContent(
               stat: stat4,
-              statColor: UiCommonColors.color_1890FF,
-              bgColor: UiCommonColors.color_0C1890FF,
+              statColor: UICommonColors.color_1890FF,
+              bgColor: UICommonColors.color_0C1890FF,
               name: name4),
         ],
       ),
@@ -410,7 +410,7 @@ class WidgetSmall {
         ),
         Text(
           name,
-          style: TextStyle(color: UiCommonColors.color_666666, fontSize: 14.sp),
+          style: TextStyle(color: UICommonColors.color_666666, fontSize: 14.sp),
         ),
       ],
     );
@@ -483,10 +483,10 @@ class WidgetSmall {
       decoration: InputDecoration(
           hintText: hintText,
           hintStyle:
-              TextStyle(color: UiCommonColors.color_999999, fontSize: 14.w),
+              TextStyle(color: UICommonColors.color_999999, fontSize: 14.w),
           border: InputBorder.none),
       style: TextStyle(
-        color: UiCommonColors.color_333333,
+        color: UICommonColors.color_333333,
         fontSize: 14.sp,
       ),
     );
@@ -509,7 +509,7 @@ class WidgetSmall {
             width: double.infinity,
             height: 36.w,
             decoration: WidgetSmall.bgRadius(
-                color: UiCommonColors.colorF5F5F5, radius: 22),
+                color: UICommonColors.colorF5F5F5, radius: 22),
             child: Row(
               children: [
                 Padding(
@@ -530,7 +530,7 @@ class WidgetSmall {
           ),
           WidgetText.getTextNormal(
             text: '搜索',
-            color: UiCommonColors.color_1AB370,
+            color: UICommonColors.color_1AB370,
             fontSize: 14.sp,
             fontWeight: FontWeight.bold,
           ),
@@ -542,7 +542,7 @@ class WidgetSmall {
   /// 分割线
   static genDivider() {
     return const Divider(
-      color: UiCommonColors.colorE5E5E5,
+      color: UICommonColors.colorE5E5E5,
       height: 1,
     );
   }
@@ -553,7 +553,7 @@ class WidgetSmall {
       children: [
         const Expanded(
             child: Divider(
-          color: UiCommonColors.colorE5E5E5,
+          color: UICommonColors.colorE5E5E5,
           height: 1,
         )),
         SizedBox(
@@ -563,7 +563,7 @@ class WidgetSmall {
           child: Container(
             width: 4.w,
             height: 4.w,
-            color: UiCommonColors.colorEEEEEE,
+            color: UICommonColors.colorEEEEEE,
           ),
         ),
         SizedBox(
@@ -571,7 +571,7 @@ class WidgetSmall {
         ),
         const Expanded(
             child: Divider(
-          color: UiCommonColors.colorE5E5E5,
+          color: UICommonColors.colorE5E5E5,
           height: 1,
         )),
       ],

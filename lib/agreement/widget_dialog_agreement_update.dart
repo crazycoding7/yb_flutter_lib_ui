@@ -68,7 +68,7 @@ class UIWidgetDialogAgreementUpdate extends Dialog {
                 children: [
                   WidgetText.getTextNormal(
                     text: '隐私政策条款和条件已有更新',
-                    color: UiCommonColors.color_333333,
+                    color: UICommonColors.color_333333,
                     fontSize: 16.sp,
                     fontWeight: FontWeight.bold,
                   ),
@@ -79,13 +79,13 @@ class UIWidgetDialogAgreementUpdate extends Dialog {
                     text: TextSpan(
                         text: "感谢您信任并使用易赋诊！\n\n",
                         style: TextStyle(
-                            color: UiCommonColors.color_666666,
+                            color: UICommonColors.color_666666,
                             fontSize: 12.sp),
                         children: [
                           TextSpan(
                               text: "《隐私政策》",
                               style: const TextStyle(
-                                  color: UiCommonColors.appMain),
+                                  color: UICommonColors.appMain),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
                                   SmartDialog.dismiss();
@@ -114,7 +114,7 @@ class UIWidgetDialogAgreementUpdate extends Dialog {
                 SizedBox(
                     height: 44.h,
                     child: const VerticalDivider(
-                      color: UiCommonColors.colorF5F5F5,
+                      color: UICommonColors.colorF5F5F5,
                     )),
                 Expanded(
                   child: WidgetButton.getBtnOldNormal(
