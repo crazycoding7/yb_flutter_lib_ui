@@ -20,10 +20,10 @@ dependencies:
   flutter_smart_dialog: ^4.5.3
   fluttertoast: ^8.0.8
   timer_count_down: ^2.2.0
-  get: 4.6.4
-  flutter_html: 3.0.0-alpha.5
+  get: ^4.6.4
+  flutter_html: ^3.0.0-alpha.5
   flutter_switch: ^0.3.2
-  keyboard_actions: 4.1.0
+  keyboard_actions: ^4.1.0
   yb_flutter_quill: ^5.4.1
   image_picker: ^0.8.5+3
   badges: ^2.0.2
