@@ -12,10 +12,9 @@ import '../images/widget_image.dart';
 import '../style/common_style.dart';
 import '../text/widget_text.dart';
 
-typedef YbCallbackInt = void Function(int num);
+typedef UIYbCallbackInt = void Function(int num);
 
 class YBAppBar {
-
   static Size screenSize(BuildContext context) => MediaQuery.of(context).size;
 
   static Size getTitleHeightSize() =>
@@ -24,9 +23,9 @@ class YBAppBar {
   /// 标准title(左,中布局) widget
   static PreferredSizeWidget getTitleAppBarNormal(
       {String title = '',
-        bool isHiddenLeftIcon = false,
-        VoidCallback? onBackClickCallback,
-        bool isWhiteTheme = false}) {
+      bool isHiddenLeftIcon = false,
+      VoidCallback? onBackClickCallback,
+      bool isWhiteTheme = false}) {
     return PreferredSize(
         child: TitleWidget(
           title: title,
@@ -40,11 +39,11 @@ class YBAppBar {
   // 标准title(中、右布局) widget
   static PreferredSizeWidget getTitleAppBarNormalRight(
       {String title = '',
-        bool isHiddenLeftIcon = true,
-        VoidCallback? onBackClickCallback,
-        String? rightText,
-        VoidCallback? onRightClickCallback,
-        bool isWhiteTheme = false}) {
+      bool isHiddenLeftIcon = true,
+      VoidCallback? onBackClickCallback,
+      String? rightText,
+      VoidCallback? onRightClickCallback,
+      bool isWhiteTheme = false}) {
     return PreferredSize(
         child: TitleWidget(
           title: title,
@@ -60,11 +59,11 @@ class YBAppBar {
   // 标准title(左、中、右布局) widget
   static PreferredSizeWidget getTitleAppBarNormalAll(
       {String title = '',
-        bool isHiddenLeftIcon = false,
-        VoidCallback? onBackClickCallback,
-        String? rightText,
-        VoidCallback? onRightClickCallback,
-        bool isWhiteTheme = false}) {
+      bool isHiddenLeftIcon = false,
+      VoidCallback? onBackClickCallback,
+      String? rightText,
+      VoidCallback? onRightClickCallback,
+      bool isWhiteTheme = false}) {
     return PreferredSize(
         child: TitleWidget(
           title: title,
@@ -135,7 +134,8 @@ class YBAppBar {
                     onTap: () {
                       onRightClickCallback();
                     },
-                    child: WidgetImage.asset(UICommonImages.pageHomeCareerGuide),
+                    child:
+                        WidgetImage.asset(UICommonImages.pageHomeCareerGuide),
                   ),
                   SizedBox(
                     width: 15.w,
@@ -264,7 +264,7 @@ class YBAppBar {
       {required String title,
       required BuildContext context,
       String rightImagePath = UICommonImages.bankCardAdd,
-      YbCallbackInt? rightListCallBack,
+      UIYbCallbackInt? rightListCallBack,
       VoidCallback? rightCallback}) {
     return AppBar(
       actions: [
